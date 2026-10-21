@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 808.0 285" width="808.0" height="285" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="50" y="50" width="84.0" height="120" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="92.0" y="40.0" font-size="13" fill="#656d76" text-anchor="middle" >klid</text>
+<rect x="134.0" y="50" width="56" height="120" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="162.0" y="40.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">START</text>
+<text x="162.0" y="195.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="190.0" y="50" width="56" height="120" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="218.0" y="40.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">D0</text>
+<text x="218.0" y="195.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="246.0" y="50" width="56" height="120" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="274.0" y="40.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">D1</text>
+<text x="274.0" y="195.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="302.0" y="50" width="56" height="120" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="330.0" y="40.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">D2</text>
+<text x="330.0" y="195.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="358.0" y="50" width="56" height="120" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="386.0" y="40.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">D3</text>
+<text x="386.0" y="195.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="414.0" y="50" width="56" height="120" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="442.0" y="40.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">D4</text>
+<text x="442.0" y="195.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="470.0" y="50" width="56" height="120" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="498.0" y="40.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">D5</text>
+<text x="498.0" y="195.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="526.0" y="50" width="56" height="120" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="554.0" y="40.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">D6</text>
+<text x="554.0" y="195.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="582.0" y="50" width="56" height="120" fill="#fff8c5" stroke="#d0d7de"/>
+<text x="610.0" y="40.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">P</text>
+<text x="610.0" y="195.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="638.0" y="50" width="56" height="120" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="666.0" y="40.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">STOP</text>
+<text x="666.0" y="195.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="694.0" y="50" width="84.0" height="120" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="736.0" y="40.0" font-size="13" fill="#656d76" text-anchor="middle" >klid</text>
+<text x="30.0" y="85.0" font-size="14" fill="#656d76" text-anchor="middle" >1</text>
+<text x="30.0" y="155.0" font-size="14" fill="#656d76" text-anchor="middle" >0</text>
+<line x1="162.0" y1="55" x2="162.0" y2="170" stroke="#cf222e" stroke-dasharray="2 4"/>
+<line x1="218.0" y1="55" x2="218.0" y2="170" stroke="#cf222e" stroke-dasharray="2 4"/>
+<line x1="274.0" y1="55" x2="274.0" y2="170" stroke="#cf222e" stroke-dasharray="2 4"/>
+<line x1="330.0" y1="55" x2="330.0" y2="170" stroke="#cf222e" stroke-dasharray="2 4"/>
+<line x1="386.0" y1="55" x2="386.0" y2="170" stroke="#cf222e" stroke-dasharray="2 4"/>
+<line x1="442.0" y1="55" x2="442.0" y2="170" stroke="#cf222e" stroke-dasharray="2 4"/>
+<line x1="498.0" y1="55" x2="498.0" y2="170" stroke="#cf222e" stroke-dasharray="2 4"/>
+<line x1="554.0" y1="55" x2="554.0" y2="170" stroke="#cf222e" stroke-dasharray="2 4"/>
+<line x1="610.0" y1="55" x2="610.0" y2="170" stroke="#cf222e" stroke-dasharray="2 4"/>
+<line x1="666.0" y1="55" x2="666.0" y2="170" stroke="#cf222e" stroke-dasharray="2 4"/>
+<polyline points="50.0,80.0 134.0,80.0 134.0,150.0 190.0,150.0 190.0,80.0 246.0,80.0 246.0,80.0 302.0,80.0 302.0,150.0 358.0,150.0 358.0,80.0 414.0,80.0 414.0,150.0 470.0,150.0 470.0,150.0 526.0,150.0 526.0,80.0 582.0,80.0 582.0,150.0 638.0,150.0 638.0,80.0 694.0,80.0 694.0,80.0 778.0,80.0" fill="none" stroke="#0969da" stroke-width="3" stroke-linejoin="round" />
+<circle cx="162.0" cy="150" r="5" fill="#cf222e"/>
+<circle cx="218.0" cy="80" r="5" fill="#cf222e"/>
+<circle cx="274.0" cy="80" r="5" fill="#cf222e"/>
+<circle cx="330.0" cy="150" r="5" fill="#cf222e"/>
+<circle cx="386.0" cy="80" r="5" fill="#cf222e"/>
+<circle cx="442.0" cy="150" r="5" fill="#cf222e"/>
+<circle cx="498.0" cy="150" r="5" fill="#cf222e"/>
+<circle cx="554.0" cy="80" r="5" fill="#cf222e"/>
+<circle cx="610.0" cy="150" r="5" fill="#cf222e"/>
+<circle cx="666.0" cy="80" r="5" fill="#cf222e"/>
+<path d="M134.0,215 v8 H694.0 v-8" fill="none" stroke="#1f2328"/>
+<text x="414.0" y="242.0" font-size="14" fill="#1f2328" text-anchor="middle" >1 rámec = 10 bitových intervalů</text>
+<text x="50.0" y="272.0" font-size="14" fill="#656d76" text-anchor="start" >Řešení: 'K' = 0x4B, 7E1 – 7 datových bitů, sudá parita (4 jedničky → P = 0)</text>
+</svg>
