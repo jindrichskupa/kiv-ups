@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="26.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Herní server doma: jak se na něj dostane kamarád z internetu?</text>
+<line x1="110" y1="150" x2="300" y2="150" stroke="#57606a" stroke-width="2"/>
+<line x1="300" y1="150" x2="470" y2="150" stroke="#57606a" stroke-width="2"/>
+<line x1="570" y1="150" x2="690" y2="150" stroke="#57606a" stroke-width="2"/>
+<rect x="92" y="120" width="36" height="60" rx="3" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<line x1="100" y1="130" x2="120" y2="130" stroke="#0969da" stroke-width="2"/>
+<line x1="100" y1="139" x2="120" y2="139" stroke="#0969da" stroke-width="2"/>
+<line x1="100" y1="148" x2="120" y2="148" stroke="#0969da" stroke-width="2"/>
+<line x1="100" y1="157" x2="120" y2="157" stroke="#0969da" stroke-width="2"/>
+<text x="110.0" y="200.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">server 192.168.0.50</text>
+<circle cx="300" cy="150" r="24" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<line x1="305" y1="155" x2="315" y2="165" stroke="#0969da" stroke-width="2.5"/>
+<line x1="295" y1="145" x2="285" y2="135" stroke="#0969da" stroke-width="2.5"/>
+<line x1="315" y1="135" x2="305" y2="145" stroke="#0969da" stroke-width="2.5"/>
+<line x1="285" y1="165" x2="295" y2="155" stroke="#0969da" stroke-width="2.5"/>
+<text x="300.0" y="192.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">R1 84.14.25.201</text>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="489.8" cy="153.0" rx="23.1" ry="15.1"/>
+<ellipse cx="509.0" cy="139.5" rx="24.8" ry="16.2"/>
+<ellipse cx="533.8" cy="141.0" rx="23.1" ry="15.1"/>
+<ellipse cx="550.2" cy="152.4" rx="22.0" ry="14.4"/>
+<ellipse cx="528.2" cy="159.0" rx="24.8" ry="16.2"/>
+<ellipse cx="506.2" cy="159.0" rx="23.1" ry="15.1"/>
+</g>
+<ellipse cx="520" cy="150" rx="41.2" ry="18.0" fill="#f6f8fa"/>
+<text x="520.0" y="155.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">Internet</text>
+<rect x="688" y="132" width="44" height="30" rx="3" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<rect x="702" y="162" width="16" height="6" fill="#0969da"/>
+<rect x="694" y="168" width="32" height="3" fill="#0969da"/>
+<text x="710.0" y="190.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">kamarád</text>
+<text x="110.0" y="85.0" font-size="13" fill="#656d76" text-anchor="middle" font-family="monospace">poslouchá :4242</text>
+<text x="710.0" y="95.0" font-size="13" fill="#656d76" text-anchor="middle" font-family="monospace">203.0.113.7</text>
+</svg>

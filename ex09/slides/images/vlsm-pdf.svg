@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 370" width="820" height="370" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="26.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Firma 147.92.0.0/16: 2 budovy, 2 routery, připojení do internetu z R2</text>
+<line x1="260" y1="200" x2="500" y2="200" stroke="#57606a" stroke-width="2"/>
+<line x1="500" y1="200" x2="680" y2="200" stroke="#57606a" stroke-width="2"/>
+<line x1="260" y1="200" x2="170" y2="105" stroke="#57606a" stroke-width="2"/>
+<line x1="260" y1="200" x2="170" y2="295" stroke="#57606a" stroke-width="2"/>
+<line x1="500" y1="200" x2="590" y2="105" stroke="#57606a" stroke-width="2"/>
+<line x1="500" y1="200" x2="590" y2="295" stroke="#57606a" stroke-width="2"/>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="117.0" cy="93.5" rx="25.2" ry="17.6"/>
+<ellipse cx="138.0" cy="77.8" rx="27.0" ry="18.9"/>
+<ellipse cx="165.0" cy="79.5" rx="25.2" ry="17.6"/>
+<ellipse cx="183.0" cy="92.8" rx="24.0" ry="16.8"/>
+<ellipse cx="159.0" cy="100.5" rx="27.0" ry="18.9"/>
+<ellipse cx="135.0" cy="100.5" rx="25.2" ry="17.6"/>
+</g>
+<ellipse cx="150" cy="90" rx="45.0" ry="21.0" fill="#f6f8fa"/>
+<text x="150.0" y="88.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">A</text>
+<text x="150.0" y="106.0" font-size="13" fill="#656d76" text-anchor="middle" >134 + 65 PC</text>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="117.0" cy="313.5" rx="25.2" ry="17.6"/>
+<ellipse cx="138.0" cy="297.8" rx="27.0" ry="18.9"/>
+<ellipse cx="165.0" cy="299.5" rx="25.2" ry="17.6"/>
+<ellipse cx="183.0" cy="312.8" rx="24.0" ry="16.8"/>
+<ellipse cx="159.0" cy="320.5" rx="27.0" ry="18.9"/>
+<ellipse cx="135.0" cy="320.5" rx="25.2" ry="17.6"/>
+</g>
+<ellipse cx="150" cy="310" rx="45.0" ry="21.0" fill="#f6f8fa"/>
+<text x="150.0" y="308.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">B</text>
+<text x="150.0" y="326.0" font-size="13" fill="#656d76" text-anchor="middle" >40 + 10 PC</text>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="577.0" cy="93.5" rx="25.2" ry="17.6"/>
+<ellipse cx="598.0" cy="77.8" rx="27.0" ry="18.9"/>
+<ellipse cx="625.0" cy="79.5" rx="25.2" ry="17.6"/>
+<ellipse cx="643.0" cy="92.8" rx="24.0" ry="16.8"/>
+<ellipse cx="619.0" cy="100.5" rx="27.0" ry="18.9"/>
+<ellipse cx="595.0" cy="100.5" rx="25.2" ry="17.6"/>
+</g>
+<ellipse cx="610" cy="90" rx="45.0" ry="21.0" fill="#f6f8fa"/>
+<text x="610.0" y="88.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">C</text>
+<text x="610.0" y="106.0" font-size="13" fill="#656d76" text-anchor="middle" >15 + 5 PC</text>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="577.0" cy="313.5" rx="25.2" ry="17.6"/>
+<ellipse cx="598.0" cy="297.8" rx="27.0" ry="18.9"/>
+<ellipse cx="625.0" cy="299.5" rx="25.2" ry="17.6"/>
+<ellipse cx="643.0" cy="312.8" rx="24.0" ry="16.8"/>
+<ellipse cx="619.0" cy="320.5" rx="27.0" ry="18.9"/>
+<ellipse cx="595.0" cy="320.5" rx="25.2" ry="17.6"/>
+</g>
+<ellipse cx="610" cy="310" rx="45.0" ry="21.0" fill="#f6f8fa"/>
+<text x="610.0" y="308.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">D</text>
+<text x="610.0" y="326.0" font-size="13" fill="#656d76" text-anchor="middle" >5 + 2 PC</text>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="709.8" cy="203.0" rx="23.1" ry="15.1"/>
+<ellipse cx="729.0" cy="189.5" rx="24.8" ry="16.2"/>
+<ellipse cx="753.8" cy="191.0" rx="23.1" ry="15.1"/>
+<ellipse cx="770.2" cy="202.4" rx="22.0" ry="14.4"/>
+<ellipse cx="748.2" cy="209.0" rx="24.8" ry="16.2"/>
+<ellipse cx="726.2" cy="209.0" rx="23.1" ry="15.1"/>
+</g>
+<ellipse cx="740" cy="200" rx="41.2" ry="18.0" fill="#f6f8fa"/>
+<text x="740.0" y="205.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">Internet</text>
+<circle cx="260" cy="200" r="24" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<line x1="265" y1="205" x2="275" y2="215" stroke="#0969da" stroke-width="2.5"/>
+<line x1="255" y1="195" x2="245" y2="185" stroke="#0969da" stroke-width="2.5"/>
+<line x1="275" y1="185" x2="265" y2="195" stroke="#0969da" stroke-width="2.5"/>
+<line x1="245" y1="215" x2="255" y2="205" stroke="#0969da" stroke-width="2.5"/>
+<text x="260.0" y="242.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">R1</text>
+<circle cx="500" cy="200" r="24" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<line x1="505" y1="205" x2="515" y2="215" stroke="#0969da" stroke-width="2.5"/>
+<line x1="495" y1="195" x2="485" y2="185" stroke="#0969da" stroke-width="2.5"/>
+<line x1="515" y1="185" x2="505" y2="195" stroke="#0969da" stroke-width="2.5"/>
+<line x1="485" y1="215" x2="495" y2="205" stroke="#0969da" stroke-width="2.5"/>
+<text x="500.0" y="242.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">R2</text>
+<text x="380.0" y="188.0" font-size="13" fill="#cf222e" text-anchor="middle" font-weight="bold">E (2 adresy)</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 766 350" width="766" height="350" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="28.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Stop-and-Wait: rámec → čekání na ACK → další rámec</text>
+<text x="20.0" y="105.0" font-size="14" fill="#1f2328" text-anchor="start" font-weight="bold">Odesílatel</text>
+<text x="20.0" y="265.0" font-size="14" fill="#1f2328" text-anchor="start" font-weight="bold">Příjemce</text>
+<line x1="120" y1="100" x2="736" y2="100" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="120" y1="260" x2="736" y2="260" stroke="#1f2328" stroke-width="1.5"/>
+<polygon points="120,100 232,100 400.0,260 288.0,260" fill="#ddf4ff" stroke="#0969da"/>
+<text x="260.0" y="185.0" font-size="14" fill="#0969da" text-anchor="middle" font-weight="bold">DATA</text>
+<polygon points="400.0,260 433.59999999999997,260 601.5999999999999,100 568.0,100" fill="#dafbe1" stroke="#1a7f37"/>
+<text x="508.8" y="185.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-weight="bold">ACK</text>
+<path d="M120,75 v10 M120,80 H232 M232,75 v10" fill="none" stroke="#0969da"/>
+<text x="176.0" y="72.0" font-size="13" fill="#0969da" text-anchor="middle" >t_data</text>
+<path d="M120,285 v10 M120,290 H288.0 M288.0,285 v10" fill="none" stroke="#656d76"/>
+<text x="204.0" y="282.0" font-size="13" fill="#656d76" text-anchor="middle" >t_d</text>
+<path d="M400.0,285 v10 M400.0,290 H433.59999999999997 M433.59999999999997,285 v10" fill="none" stroke="#1a7f37"/>
+<text x="416.8" y="282.0" font-size="13" fill="#1a7f37" text-anchor="middle" >t_ack</text>
+<path d="M433.59999999999997,75 v10 M433.59999999999997,80 H601.5999999999999 M601.5999999999999,75 v10" fill="none" stroke="#656d76"/>
+<text x="517.6" y="72.0" font-size="13" fill="#656d76" text-anchor="middle" >t_d</text>
+<path d="M120,45 v10 M120,50 H601.5999999999999 M601.5999999999999,45 v10" fill="none" stroke="#cf222e"/>
+<text x="360.8" y="42.0" font-size="13" fill="#cf222e" text-anchor="middle" >cyklus = t_data + t_ack + 2 · t_d</text>
+<rect x="601.5999999999999" y="78" width="112" height="22" fill="#ddf4ff" stroke="#0969da"/>
+<text x="657.6" y="94.0" font-size="12" fill="#0969da" text-anchor="middle" >další</text>
+<text x="20.0" y="335.0" font-size="13" fill="#656d76" text-anchor="start" >Efektivita e = t_data / (t_data + t_ack + 2 · t_d) - po celý zbytek cyklu linka mlčí.</text>
+</svg>

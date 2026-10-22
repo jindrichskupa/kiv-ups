@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 380" width="780" height="380" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="26.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Příklad 7: síť 192.168.100.0/24</text>
+<line x1="300" y1="210" x2="560" y2="210" stroke="#57606a" stroke-width="2"/>
+<line x1="300" y1="210" x2="300" y2="60" stroke="#57606a" stroke-width="2"/>
+<line x1="300" y1="210" x2="200" y2="120" stroke="#57606a" stroke-width="2"/>
+<line x1="300" y1="210" x2="200" y2="300" stroke="#57606a" stroke-width="2"/>
+<line x1="560" y1="210" x2="650" y2="120" stroke="#57606a" stroke-width="2"/>
+<line x1="560" y1="210" x2="650" y2="300" stroke="#57606a" stroke-width="2"/>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="147.0" cy="113.5" rx="25.2" ry="17.6"/>
+<ellipse cx="168.0" cy="97.8" rx="27.0" ry="18.9"/>
+<ellipse cx="195.0" cy="99.5" rx="25.2" ry="17.6"/>
+<ellipse cx="213.0" cy="112.8" rx="24.0" ry="16.8"/>
+<ellipse cx="189.0" cy="120.5" rx="27.0" ry="18.9"/>
+<ellipse cx="165.0" cy="120.5" rx="25.2" ry="17.6"/>
+</g>
+<ellipse cx="180" cy="110" rx="45.0" ry="21.0" fill="#f6f8fa"/>
+<text x="180.0" y="108.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">A</text>
+<text x="180.0" y="126.0" font-size="13" fill="#656d76" text-anchor="middle" >100 PC</text>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="147.0" cy="318.5" rx="25.2" ry="17.6"/>
+<ellipse cx="168.0" cy="302.8" rx="27.0" ry="18.9"/>
+<ellipse cx="195.0" cy="304.5" rx="25.2" ry="17.6"/>
+<ellipse cx="213.0" cy="317.8" rx="24.0" ry="16.8"/>
+<ellipse cx="189.0" cy="325.5" rx="27.0" ry="18.9"/>
+<ellipse cx="165.0" cy="325.5" rx="25.2" ry="17.6"/>
+</g>
+<ellipse cx="180" cy="315" rx="45.0" ry="21.0" fill="#f6f8fa"/>
+<text x="180.0" y="313.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">B</text>
+<text x="180.0" y="331.0" font-size="13" fill="#656d76" text-anchor="middle" >50 PC</text>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="647.0" cy="113.5" rx="25.2" ry="17.6"/>
+<ellipse cx="668.0" cy="97.8" rx="27.0" ry="18.9"/>
+<ellipse cx="695.0" cy="99.5" rx="25.2" ry="17.6"/>
+<ellipse cx="713.0" cy="112.8" rx="24.0" ry="16.8"/>
+<ellipse cx="689.0" cy="120.5" rx="27.0" ry="18.9"/>
+<ellipse cx="665.0" cy="120.5" rx="25.2" ry="17.6"/>
+</g>
+<ellipse cx="680" cy="110" rx="45.0" ry="21.0" fill="#f6f8fa"/>
+<text x="680.0" y="108.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">C</text>
+<text x="680.0" y="126.0" font-size="13" fill="#656d76" text-anchor="middle" >20 PC</text>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="647.0" cy="318.5" rx="25.2" ry="17.6"/>
+<ellipse cx="668.0" cy="302.8" rx="27.0" ry="18.9"/>
+<ellipse cx="695.0" cy="304.5" rx="25.2" ry="17.6"/>
+<ellipse cx="713.0" cy="317.8" rx="24.0" ry="16.8"/>
+<ellipse cx="689.0" cy="325.5" rx="27.0" ry="18.9"/>
+<ellipse cx="665.0" cy="325.5" rx="25.2" ry="17.6"/>
+</g>
+<ellipse cx="680" cy="315" rx="45.0" ry="21.0" fill="#f6f8fa"/>
+<text x="680.0" y="313.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">D</text>
+<text x="680.0" y="331.0" font-size="13" fill="#656d76" text-anchor="middle" >10 PC</text>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="272.5" cy="62.5" rx="21.0" ry="12.6"/>
+<ellipse cx="290.0" cy="51.2" rx="22.5" ry="13.5"/>
+<ellipse cx="312.5" cy="52.5" rx="21.0" ry="12.6"/>
+<ellipse cx="327.5" cy="62.0" rx="20.0" ry="12.0"/>
+<ellipse cx="307.5" cy="67.5" rx="22.5" ry="13.5"/>
+<ellipse cx="287.5" cy="67.5" rx="21.0" ry="12.6"/>
+</g>
+<ellipse cx="300" cy="60" rx="37.5" ry="15.0" fill="#f6f8fa"/>
+<text x="300.0" y="65.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">ISP</text>
+<circle cx="300" cy="210" r="24" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<line x1="305" y1="215" x2="315" y2="225" stroke="#0969da" stroke-width="2.5"/>
+<line x1="295" y1="205" x2="285" y2="195" stroke="#0969da" stroke-width="2.5"/>
+<line x1="315" y1="195" x2="305" y2="205" stroke="#0969da" stroke-width="2.5"/>
+<line x1="285" y1="225" x2="295" y2="215" stroke="#0969da" stroke-width="2.5"/>
+<text x="300.0" y="252.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">R1</text>
+<circle cx="560" cy="210" r="24" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<line x1="565" y1="215" x2="575" y2="225" stroke="#0969da" stroke-width="2.5"/>
+<line x1="555" y1="205" x2="545" y2="195" stroke="#0969da" stroke-width="2.5"/>
+<line x1="575" y1="195" x2="565" y2="205" stroke="#0969da" stroke-width="2.5"/>
+<line x1="545" y1="225" x2="555" y2="215" stroke="#0969da" stroke-width="2.5"/>
+<text x="560.0" y="252.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">R2</text>
+<text x="430.0" y="198.0" font-size="13" fill="#cf222e" text-anchor="middle" font-weight="bold">L1 (P2P)</text>
+<text x="312.0" y="125.0" font-size="13" fill="#cf222e" text-anchor="start" font-weight="bold">L2 (P2P)</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" width="700" height="560" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="26.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Řešení 1: 0100 1110</text>
+<line x1="190" y1="62" x2="190" y2="548" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="220.0" y1="68" x2="220.0" y2="548" stroke="#eef1f4"/>
+<text x="220.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<line x1="250" y1="62" x2="250" y2="548" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="280.0" y1="68" x2="280.0" y2="548" stroke="#eef1f4"/>
+<text x="280.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="310" y1="62" x2="310" y2="548" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="340.0" y1="68" x2="340.0" y2="548" stroke="#eef1f4"/>
+<text x="340.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<line x1="370" y1="62" x2="370" y2="548" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="400.0" y1="68" x2="400.0" y2="548" stroke="#eef1f4"/>
+<text x="400.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<line x1="430" y1="62" x2="430" y2="548" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="460.0" y1="68" x2="460.0" y2="548" stroke="#eef1f4"/>
+<text x="460.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="490" y1="62" x2="490" y2="548" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="520.0" y1="68" x2="520.0" y2="548" stroke="#eef1f4"/>
+<text x="520.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="550" y1="62" x2="550" y2="548" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="580.0" y1="68" x2="580.0" y2="548" stroke="#eef1f4"/>
+<text x="580.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="610" y1="62" x2="610" y2="548" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="640.0" y1="68" x2="640.0" y2="548" stroke="#eef1f4"/>
+<text x="640.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<line x1="670" y1="62" x2="670" y2="548" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<text x="20.0" y="112.0" font-size="15" fill="#1f2328" text-anchor="start" font-weight="bold">NRZ-L</text>
+<text x="20.0" y="132.0" font-size="12" fill="#656d76" text-anchor="start" >1 = H, 0 = L</text>
+<text x="180.0" y="91.0" font-size="13" fill="#656d76" text-anchor="end" >H</text>
+<line x1="190" y1="86" x2="670" y2="86" stroke="#eef1f4"/>
+<text x="180.0" y="151.0" font-size="13" fill="#656d76" text-anchor="end" >L</text>
+<line x1="190" y1="146" x2="670" y2="146" stroke="#eef1f4"/>
+<polyline points="190.0,146.0 250.0,146.0 250.0,86.0 310.0,86.0 310.0,146.0 370.0,146.0 370.0,146.0 430.0,146.0 430.0,86.0 490.0,86.0 490.0,86.0 550.0,86.0 550.0,86.0 610.0,86.0 610.0,146.0 670.0,146.0" fill="none" stroke="#0969da" stroke-width="3" stroke-linejoin="round" />
+<text x="20.0" y="208.0" font-size="15" fill="#1f2328" text-anchor="start" font-weight="bold">NRZ-M (NRZI)</text>
+<text x="20.0" y="228.0" font-size="12" fill="#656d76" text-anchor="start" >1 = přechod</text>
+<text x="180.0" y="187.0" font-size="13" fill="#656d76" text-anchor="end" >H</text>
+<line x1="190" y1="182" x2="670" y2="182" stroke="#eef1f4"/>
+<text x="180.0" y="247.0" font-size="13" fill="#656d76" text-anchor="end" >L</text>
+<line x1="190" y1="242" x2="670" y2="242" stroke="#eef1f4"/>
+<polyline points="190.0,242.0 250.0,242.0 250.0,182.0 310.0,182.0 310.0,182.0 370.0,182.0 370.0,182.0 430.0,182.0 430.0,242.0 490.0,242.0 490.0,182.0 550.0,182.0 550.0,242.0 610.0,242.0 610.0,242.0 670.0,242.0" fill="none" stroke="#0969da" stroke-width="3" stroke-linejoin="round" />
+<text x="20.0" y="304.0" font-size="15" fill="#1f2328" text-anchor="start" font-weight="bold">RZ</text>
+<text x="20.0" y="324.0" font-size="12" fill="#656d76" text-anchor="start" >1 = +, 0 = −, pak 0</text>
+<text x="180.0" y="283.0" font-size="13" fill="#656d76" text-anchor="end" >+</text>
+<line x1="190" y1="278" x2="670" y2="278" stroke="#eef1f4"/>
+<text x="180.0" y="313.0" font-size="13" fill="#656d76" text-anchor="end" >0</text>
+<line x1="190" y1="308" x2="670" y2="308" stroke="#eef1f4"/>
+<text x="180.0" y="343.0" font-size="13" fill="#656d76" text-anchor="end" >−</text>
+<line x1="190" y1="338" x2="670" y2="338" stroke="#eef1f4"/>
+<polyline points="190.0,338.0 220.0,338.0 220.0,308.0 250.0,308.0 250.0,278.0 280.0,278.0 280.0,308.0 310.0,308.0 310.0,338.0 340.0,338.0 340.0,308.0 370.0,308.0 370.0,338.0 400.0,338.0 400.0,308.0 430.0,308.0 430.0,278.0 460.0,278.0 460.0,308.0 490.0,308.0 490.0,278.0 520.0,278.0 520.0,308.0 550.0,308.0 550.0,278.0 580.0,278.0 580.0,308.0 610.0,308.0 610.0,338.0 640.0,338.0 640.0,308.0 670.0,308.0" fill="none" stroke="#0969da" stroke-width="3" stroke-linejoin="round" />
+<text x="20.0" y="400.0" font-size="15" fill="#1f2328" text-anchor="start" font-weight="bold">Manchester</text>
+<text x="20.0" y="420.0" font-size="12" fill="#656d76" text-anchor="start" >802.3: 1 = L→H</text>
+<text x="180.0" y="379.0" font-size="13" fill="#656d76" text-anchor="end" >H</text>
+<line x1="190" y1="374" x2="670" y2="374" stroke="#eef1f4"/>
+<text x="180.0" y="439.0" font-size="13" fill="#656d76" text-anchor="end" >L</text>
+<line x1="190" y1="434" x2="670" y2="434" stroke="#eef1f4"/>
+<polyline points="190.0,374.0 220.0,374.0 220.0,434.0 250.0,434.0 250.0,434.0 280.0,434.0 280.0,374.0 310.0,374.0 310.0,374.0 340.0,374.0 340.0,434.0 370.0,434.0 370.0,374.0 400.0,374.0 400.0,434.0 430.0,434.0 430.0,434.0 460.0,434.0 460.0,374.0 490.0,374.0 490.0,434.0 520.0,434.0 520.0,374.0 550.0,374.0 550.0,434.0 580.0,434.0 580.0,374.0 610.0,374.0 610.0,374.0 640.0,374.0 640.0,434.0 670.0,434.0" fill="none" stroke="#0969da" stroke-width="3" stroke-linejoin="round" />
+<text x="20.0" y="496.0" font-size="15" fill="#1f2328" text-anchor="start" font-weight="bold">Dif. Manchester</text>
+<text x="20.0" y="516.0" font-size="12" fill="#656d76" text-anchor="start" >0 = změna na hraně</text>
+<text x="180.0" y="475.0" font-size="13" fill="#656d76" text-anchor="end" >H</text>
+<line x1="190" y1="470" x2="670" y2="470" stroke="#eef1f4"/>
+<text x="180.0" y="535.0" font-size="13" fill="#656d76" text-anchor="end" >L</text>
+<line x1="190" y1="530" x2="670" y2="530" stroke="#eef1f4"/>
+<polyline points="190.0,470.0 220.0,470.0 220.0,530.0 250.0,530.0 250.0,530.0 280.0,530.0 280.0,470.0 310.0,470.0 310.0,530.0 340.0,530.0 340.0,470.0 370.0,470.0 370.0,530.0 400.0,530.0 400.0,470.0 430.0,470.0 430.0,470.0 460.0,470.0 460.0,530.0 490.0,530.0 490.0,530.0 520.0,530.0 520.0,470.0 550.0,470.0 550.0,470.0 580.0,470.0 580.0,530.0 610.0,530.0 610.0,470.0 640.0,470.0 640.0,530.0 670.0,530.0" fill="none" stroke="#0969da" stroke-width="3" stroke-linejoin="round" />
+</svg>

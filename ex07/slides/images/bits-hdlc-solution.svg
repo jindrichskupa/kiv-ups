@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 958 208" width="958" height="208" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="28.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Řešení: HDLC, vlajka 01111110, 0 po pěti 1</text>
+<text x="20.0" y="78.0" font-size="14" fill="#1f2328" text-anchor="start" font-weight="bold">data</text>
+<rect x="190" y="52" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="201.0" y="77.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="212" y="52" width="22" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="223.0" y="77.0" font-size="14" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="234" y="52" width="22" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="245.0" y="77.0" font-size="14" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="256" y="52" width="22" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="267.0" y="77.0" font-size="14" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="278" y="52" width="22" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="289.0" y="77.0" font-size="14" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="300" y="52" width="22" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="311.0" y="77.0" font-size="14" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="322" y="52" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="333.0" y="77.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="344" y="52" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="355.0" y="77.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="366" y="52" width="22" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="377.0" y="77.0" font-size="14" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="388" y="52" width="22" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="399.0" y="77.0" font-size="14" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="410" y="52" width="22" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="421.0" y="77.0" font-size="14" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="432" y="52" width="22" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="443.0" y="77.0" font-size="14" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="454" y="52" width="22" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="465.0" y="77.0" font-size="14" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="476" y="52" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="487.0" y="77.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="498" y="52" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="509.0" y="77.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="520" y="52" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="531.0" y="77.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<text x="20.0" y="136.0" font-size="14" fill="#1f2328" text-anchor="start" font-weight="bold">rámec</text>
+<rect x="190" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="201.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">0</text>
+<rect x="212" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="223.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="234" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="245.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="256" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="267.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="278" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="289.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="300" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="311.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="322" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="333.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="344" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="355.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">0</text>
+<rect x="366" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="377.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="388" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="399.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="410" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="421.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="432" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="443.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="454" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="465.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="476" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="487.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="498" y="110" width="22" height="38" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="509.0" y="135.0" font-size="14" fill="#0969da" text-anchor="middle" font-family="monospace" font-weight="bold">0</text>
+<rect x="520" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="531.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="542" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="553.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="564" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="575.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="586" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="597.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="608" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="619.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="630" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="641.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="652" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="663.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="674" y="110" width="22" height="38" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="685.0" y="135.0" font-size="14" fill="#0969da" text-anchor="middle" font-family="monospace" font-weight="bold">0</text>
+<rect x="696" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="707.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<rect x="718" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="729.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="740" y="110" width="22" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="751.0" y="135.0" font-size="14" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<rect x="762" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="773.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">0</text>
+<rect x="784" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="795.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="806" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="817.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="828" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="839.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="850" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="861.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="872" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="883.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="894" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="905.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">1</text>
+<rect x="916" y="110" width="22" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="927.0" y="135.0" font-size="14" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">0</text>
+<rect x="20" y="178" width="14" height="14" fill="#dafbe1" stroke="#1a7f37"/>
+<text x="40.0" y="190.0" font-size="13" fill="#656d76" text-anchor="start" >řídicí znak / vlajka</text>
+<rect x="240" y="178" width="14" height="14" fill="#ffebe9" stroke="#cf222e"/>
+<text x="260.0" y="190.0" font-size="13" fill="#656d76" text-anchor="start" >data = řídicí kombinace</text>
+<rect x="460" y="178" width="14" height="14" fill="#ddf4ff" stroke="#0969da"/>
+<text x="480.0" y="190.0" font-size="13" fill="#656d76" text-anchor="start" >vložené</text>
+</svg>

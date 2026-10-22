@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 294" width="880" height="294" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="26.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Řešení 4: 0001 0000 1110 → 01001 11110 11100</text>
+<line x1="190" y1="62" x2="190" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="212.0" y1="68" x2="212.0" y2="260" stroke="#eef1f4"/>
+<text x="212.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<line x1="234" y1="62" x2="234" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="256.0" y1="68" x2="256.0" y2="260" stroke="#eef1f4"/>
+<text x="256.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="278" y1="62" x2="278" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="300.0" y1="68" x2="300.0" y2="260" stroke="#eef1f4"/>
+<text x="300.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<line x1="322" y1="62" x2="322" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="344.0" y1="68" x2="344.0" y2="260" stroke="#eef1f4"/>
+<text x="344.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<line x1="366" y1="62" x2="366" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="388.0" y1="68" x2="388.0" y2="260" stroke="#eef1f4"/>
+<text x="388.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="410" y1="62" x2="410" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="432.0" y1="68" x2="432.0" y2="260" stroke="#eef1f4"/>
+<text x="432.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="454" y1="62" x2="454" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="476.0" y1="68" x2="476.0" y2="260" stroke="#eef1f4"/>
+<text x="476.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="498" y1="62" x2="498" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="520.0" y1="68" x2="520.0" y2="260" stroke="#eef1f4"/>
+<text x="520.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="542" y1="62" x2="542" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="564.0" y1="68" x2="564.0" y2="260" stroke="#eef1f4"/>
+<text x="564.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="586" y1="62" x2="586" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="608.0" y1="68" x2="608.0" y2="260" stroke="#eef1f4"/>
+<text x="608.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<line x1="630" y1="62" x2="630" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="652.0" y1="68" x2="652.0" y2="260" stroke="#eef1f4"/>
+<text x="652.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="674" y1="62" x2="674" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="696.0" y1="68" x2="696.0" y2="260" stroke="#eef1f4"/>
+<text x="696.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="718" y1="62" x2="718" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="740.0" y1="68" x2="740.0" y2="260" stroke="#eef1f4"/>
+<text x="740.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">1</text>
+<line x1="762" y1="62" x2="762" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="784.0" y1="68" x2="784.0" y2="260" stroke="#eef1f4"/>
+<text x="784.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<line x1="806" y1="62" x2="806" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<line x1="828.0" y1="68" x2="828.0" y2="260" stroke="#eef1f4"/>
+<text x="828.0" y="56.0" font-size="16" fill="#1f2328" text-anchor="middle" font-family="monospace">0</text>
+<line x1="850" y1="62" x2="850" y2="260" stroke="#d0d7de" stroke-dasharray="4 3"/>
+<text x="20.0" y="112.0" font-size="15" fill="#1f2328" text-anchor="start" font-weight="bold">NRZ-M (NRZI)</text>
+<text x="20.0" y="132.0" font-size="12" fill="#656d76" text-anchor="start" >1 = přechod</text>
+<text x="180.0" y="91.0" font-size="13" fill="#656d76" text-anchor="end" >H</text>
+<line x1="190" y1="86" x2="850" y2="86" stroke="#eef1f4"/>
+<text x="180.0" y="151.0" font-size="13" fill="#656d76" text-anchor="end" >L</text>
+<line x1="190" y1="146" x2="850" y2="146" stroke="#eef1f4"/>
+<polyline points="190.0,146.0 234.0,146.0 234.0,86.0 278.0,86.0 278.0,86.0 322.0,86.0 322.0,86.0 366.0,86.0 366.0,146.0 410.0,146.0 410.0,86.0 454.0,86.0 454.0,146.0 498.0,146.0 498.0,86.0 542.0,86.0 542.0,146.0 586.0,146.0 586.0,146.0 630.0,146.0 630.0,86.0 674.0,86.0 674.0,146.0 718.0,146.0 718.0,86.0 762.0,86.0 762.0,86.0 806.0,86.0 806.0,86.0 850.0,86.0" fill="none" stroke="#0969da" stroke-width="3" stroke-linejoin="round" />
+<text x="20.0" y="208.0" font-size="15" fill="#1f2328" text-anchor="start" font-weight="bold">MLT-3</text>
+<text x="20.0" y="228.0" font-size="12" fill="#656d76" text-anchor="start" >1 = další úroveň</text>
+<text x="180.0" y="187.0" font-size="13" fill="#656d76" text-anchor="end" >+</text>
+<line x1="190" y1="182" x2="850" y2="182" stroke="#eef1f4"/>
+<text x="180.0" y="217.0" font-size="13" fill="#656d76" text-anchor="end" >0</text>
+<line x1="190" y1="212" x2="850" y2="212" stroke="#eef1f4"/>
+<text x="180.0" y="247.0" font-size="13" fill="#656d76" text-anchor="end" >−</text>
+<line x1="190" y1="242" x2="850" y2="242" stroke="#eef1f4"/>
+<polyline points="190.0,212.0 234.0,212.0 234.0,182.0 278.0,182.0 278.0,182.0 322.0,182.0 322.0,182.0 366.0,182.0 366.0,212.0 410.0,212.0 410.0,242.0 454.0,242.0 454.0,212.0 498.0,212.0 498.0,182.0 542.0,182.0 542.0,212.0 586.0,212.0 586.0,212.0 630.0,212.0 630.0,242.0 674.0,242.0 674.0,212.0 718.0,212.0 718.0,182.0 762.0,182.0 762.0,182.0 806.0,182.0 806.0,182.0 850.0,182.0" fill="none" stroke="#0969da" stroke-width="3" stroke-linejoin="round" />
+<text x="20.0" y="282.0" font-size="13" fill="#656d76" text-anchor="start" >Výchozí stav: NRZI L, MLT-3 na 0 (cyklus 0 → + → 0 → −). Nejdelší řada nul v kódu: 2 (v datech: 4).</text>
+</svg>

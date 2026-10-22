@@ -10,6 +10,22 @@ dB:        X = 10 · log10(P1 / P2)        S/N = 10^(SNR_dB / 10)
 log2(x) = ln(x) / ln(2) = log10(x) / 0,301
 ```
 
+Plán cvičení (90 min):
+
+| příklad | min | |
+|---|---|---|
+| 1 | 5 | jádro |
+| 2 | 5 | jádro |
+| 3 | 6 | jádro |
+| 4 | 6 | jádro |
+| 5 | 12 | jádro |
+| 6 | 6 | jádro |
+| 7 | 8 | jádro |
+| 8 | - | bonus |
+| 9 | - | bonus |
+| 10 | - | bonus |
+| 11 | - | bonus |
+
 ---
 
 ## Příklad 1 - Nyquist
@@ -138,7 +154,127 @@ Shannonova mez (6,92 Mb/s) vyjde necelá - nevadí, je to strop, ne rychlost kon
 
 ---
 
-## Příklad 5 - potřebné SNR
+## Příklad 5 - nakreslete 'K' a 'k'
+
+`'K'` = ASCII 75 = `0x4B` = `0100 1011b`
+
+**a) 8N1**
+
+Datové bity se posílají od **LSB** (D0) po MSB (D7):
+
+| bit | D7 | D6 | D5 | D4 | D3 | D2 | D1 | D0 |
+|-----|----|----|----|----|----|----|----|----|
+| hodnota | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 |
+
+Pořadí na lince: `START | D0 D1 D2 D3 D4 D5 D6 D7 | STOP`
+
+```
+klid  START  D0 D1 D2 D3 D4 D5 D6 D7  STOP  klid
+ 1      0     1  1  0  1  0  0  1  0    1     1
+```
+
+![K 8N1](images/uart-K-8n1.svg)
+
+**b) 7E1**
+
+* 7 datových bitů: `100 1011b` (D6..D0)
+* od LSB: `1 1 0 1 0 0 1`
+* počet jedniček v datech = 4 → sudá parita: `P = 0` (celkový počet jedniček včetně P musí být sudý)
+
+```
+klid  START  D0 D1 D2 D3 D4 D5 D6  P  STOP  klid
+ 1      0     1  1  0  1  0  0  1  0    1     1
+```
+
+![K 7E1](images/uart-K-7e1.svg)
+
+Oba rámce mají 10 bitových intervalů.
+
+**c) 'k' v 8E2**
+
+`'k'` = ASCII 107 = `0x6B` = `0110 1011b` - proti `'K'` (`0100 1011b`) se liší jen bit D5 (malé a velké písmeno se v ASCII liší o 32 = `2^5`).
+
+* od LSB: `1 1 0 1 0 1 1 0`
+* počet jedniček v datech = 5 (lichý) → sudá parita: `P = 1`, aby celkový počet jedniček byl sudý (6)
+* 2 stop bity = linka zůstane v klidu (log. 1) 2 bitové intervaly
+
+```
+klid  START  D0 D1 D2 D3 D4 D5 D6 D7  P  STOP STOP  klid
+ 1      0     1  1  0  1  0  1  1  0  1    1    1     1
+```
+
+![k 8E2](images/uart-k-8e2.svg)
+
+Rámec má `1 + 8 + 1 + 2 = 12` bitových intervalů → užitečných je jen `8 / 12 ≈ 67 %` (u 8N1 80 %).
+
+---
+
+## Příklad 6 - dekódujte
+
+![UART decode](images/uart-decode-solution.svg)
+
+Postup:
+
+1. najít sestupnou hranu z klidu (1 → 0) = začátek START bitu
+2. rozdělit čas na bitové intervaly (9600 Bd → 104 µs)
+3. číst hodnotu **uprostřed** každého intervalu
+4. ověřit START = 0 a STOP = 1
+5. datové bity otočit (přišly od LSB)
+
+```
+na lince:   START  D0 D1 D2 D3 D4 D5 D6 D7  STOP
+             0     0  0  0  1  0  1  1  0    1   ✓ start = 0, stop = 1
+
+D7..D0 = 0 1 1 0 1 0 0 0 = 0110 1000b = 0x68 = 104 = 'h'
+```
+
+**Parita při 8E1:** jedniček v datech = 3 (lichý počet) → `P = 1`, aby jich celkem byl sudý počet.
+
+---
+
+## Příklad 7 - doba přenosu a tolerance
+
+Při 2 úrovních (`N = 2`) platí `1 Bd = 1 b/s`, tj. 9600 Bd = 9600 bitových intervalů za sekundu (včetně start/stop bitů).
+
+**a) 1 KiB = 1024 B**
+
+| režim | bitů na znak | celkem bitů | čas |
+|-------|--------------|-------------|-----|
+| 9600 8N1 | 1 + 8 + 0 + 1 = 10 | 10 240 | 10 240 / 9600 ≈ **1,07 s** |
+| 9600 8E2 | 1 + 8 + 1 + 2 = 12 | 12 288 | 12 288 / 9600 = **1,28 s** |
+| 115200 8N1 | 10 | 10 240 | 10 240 / 115 200 ≈ **88,9 ms** |
+
+**b) užitečná rychlost 115200 8N1**
+
+```
+115 200 / 10 bitů na znak = 11 520 B/s     (užitečných 92 160 b/s = 80 %)
+```
+
+Častá chyba: `115 200 / 8 = 14 400 B/s` - zapomíná na start a stop bit.
+
+**c) vysílač 9800 Bd, přijímač 9600 Bd**
+
+```
+relativní odchylka = |9800 − 9600| / 9600 ≈ 2,08 %
+```
+
+Rozdíl `200 Bd` je tedy prostě rozdíl rychlostí vysílače a přijímače; v poměru k nominální rychlosti je to odchylka hodin.
+
+Přijímač se synchronizuje na sestupné hraně START bitu a dál už jen odpočítává bitové intervaly `T`. Poslední vzorek je uprostřed STOP bitu: START (1) + 8 datových bitů (8) + polovina STOP bitu (0,5) = `9,5 T` od hrany. Každý bit chyba přibude, takže u posledního vzorku je největší:
+
+```
+posun = 9,5 · 2,08 % ≈ 0,198 bitu
+```
+
+Vzorek musí zůstat v rámci bitu, tj. posun < 0,5 bitu → `0,198 < 0,5` → **znak se přijme správně**.
+
+Přesněji: `9,5 T_rx` odpovídá `9,5 · 9800 / 9600 ≈ 9,70 T_tx` → pořád v intervalu STOP bitu `⟨9, 10)`.
+
+Mezní odchylka pro 8N1: `0,5 / 9,5 ≈ 5,3 %` (součet chyb obou stran; v praxi se doporučuje < 2 - 3 %).
+
+---
+
+## Příklad 8 - potřebné SNR (bonus)
 
 Chceme `C = 100 Mb/s`, `B = 20 MHz`. Vyjádříme S/N ze Shannona:
 
@@ -168,7 +304,7 @@ Dvojnásobné pásmo sníží potřebné SNR o ~8 dB. Pozor: šum roste s pásme
 
 ---
 
-## Příklad 6 - útlum a kapacita
+## Příklad 9 - útlum a kapacita (bonus)
 
 **a) útlum trasy**
 
@@ -201,7 +337,7 @@ C = 10^6 · log2(1 + 1000) ≈ 10^6 · 9,967 ≈ 9,97 Mb/s
 
 ---
 
-## Příklad 7 - modem V.32 (motivační)
+## Příklad 10 - modem V.32 (motivační) (bonus)
 
 Linka 300 - 3400 Hz, SNR ≈ 30 dB. Modem V.32: nosná 1800 Hz, 2400 Bd, QAM-16.
 
@@ -269,7 +405,7 @@ Symboly by se slévaly (ISI). Rychlost jde zvýšit jen víc bity na symbol, a t
 
 ---
 
-## Příklad 8 - Ethernet 100 → 1000 Mb/s (motivační)
+## Příklad 11 - Ethernet 100 → 1000 Mb/s (motivační) (bonus)
 
 **a) 100BASE-TX, jeden směr**
 
@@ -321,123 +457,3 @@ Vysílač i přijímač jsou na obou koncích páru zároveň. Přijímač zná 
 | 4 páry | Cat5 je má všechny, 10/100 využíval jen 2 |
 | PAM-5 | 2 bity/symbol + rezerva pro trellis kód a řídicí symboly |
 | Cat5e | doplněná specifikace kabelu (přeslechy, odrazy) pro jistotu |
-
----
-
-## Příklad 9 - nakreslete 'K' a 'k'
-
-`'K'` = ASCII 75 = `0x4B` = `0100 1011b`
-
-**a) 8N1**
-
-Datové bity se posílají od **LSB** (D0) po MSB (D7):
-
-| bit | D7 | D6 | D5 | D4 | D3 | D2 | D1 | D0 |
-|-----|----|----|----|----|----|----|----|----|
-| hodnota | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 |
-
-Pořadí na lince: `START | D0 D1 D2 D3 D4 D5 D6 D7 | STOP`
-
-```
-klid  START  D0 D1 D2 D3 D4 D5 D6 D7  STOP  klid
- 1      0     1  1  0  1  0  0  1  0    1     1
-```
-
-![K 8N1](images/uart-K-8n1.svg)
-
-**b) 7E1**
-
-* 7 datových bitů: `100 1011b` (D6..D0)
-* od LSB: `1 1 0 1 0 0 1`
-* počet jedniček v datech = 4 → sudá parita: `P = 0` (celkový počet jedniček včetně P musí být sudý)
-
-```
-klid  START  D0 D1 D2 D3 D4 D5 D6  P  STOP  klid
- 1      0     1  1  0  1  0  0  1  0    1     1
-```
-
-![K 7E1](images/uart-K-7e1.svg)
-
-Oba rámce mají 10 bitových intervalů.
-
-**c) 'k' v 8E2**
-
-`'k'` = ASCII 107 = `0x6B` = `0110 1011b` - proti `'K'` (`0100 1011b`) se liší jen bit D5 (malé a velké písmeno se v ASCII liší o 32 = `2^5`).
-
-* od LSB: `1 1 0 1 0 1 1 0`
-* počet jedniček v datech = 5 (lichý) → sudá parita: `P = 1`, aby celkový počet jedniček byl sudý (6)
-* 2 stop bity = linka zůstane v klidu (log. 1) 2 bitové intervaly
-
-```
-klid  START  D0 D1 D2 D3 D4 D5 D6 D7  P  STOP STOP  klid
- 1      0     1  1  0  1  0  1  1  0  1    1    1     1
-```
-
-![k 8E2](images/uart-k-8e2.svg)
-
-Rámec má `1 + 8 + 1 + 2 = 12` bitových intervalů → užitečných je jen `8 / 12 ≈ 67 %` (u 8N1 80 %).
-
----
-
-## Příklad 10 - dekódujte
-
-![UART decode](images/uart-decode-solution.svg)
-
-Postup:
-
-1. najít sestupnou hranu z klidu (1 → 0) = začátek START bitu
-2. rozdělit čas na bitové intervaly (9600 Bd → 104 µs)
-3. číst hodnotu **uprostřed** každého intervalu
-4. ověřit START = 0 a STOP = 1
-5. datové bity otočit (přišly od LSB)
-
-```
-na lince:   START  D0 D1 D2 D3 D4 D5 D6 D7  STOP
-             0     0  0  0  1  0  1  1  0    1   ✓ start = 0, stop = 1
-
-D7..D0 = 0 1 1 0 1 0 0 0 = 0110 1000b = 0x68 = 104 = 'h'
-```
-
-**Parita při 8E1:** jedniček v datech = 3 (lichý počet) → `P = 1`, aby jich celkem byl sudý počet.
-
----
-
-## Příklad 11 - doba přenosu a tolerance
-
-Při 2 úrovních (`N = 2`) platí `1 Bd = 1 b/s`, tj. 9600 Bd = 9600 bitových intervalů za sekundu (včetně start/stop bitů).
-
-**a) 1 KiB = 1024 B**
-
-| režim | bitů na znak | celkem bitů | čas |
-|-------|--------------|-------------|-----|
-| 9600 8N1 | 1 + 8 + 0 + 1 = 10 | 10 240 | 10 240 / 9600 ≈ **1,07 s** |
-| 9600 8E2 | 1 + 8 + 1 + 2 = 12 | 12 288 | 12 288 / 9600 = **1,28 s** |
-| 115200 8N1 | 10 | 10 240 | 10 240 / 115 200 ≈ **88,9 ms** |
-
-**b) užitečná rychlost 115200 8N1**
-
-```
-115 200 / 10 bitů na znak = 11 520 B/s     (užitečných 92 160 b/s = 80 %)
-```
-
-Častá chyba: `115 200 / 8 = 14 400 B/s` - zapomíná na start a stop bit.
-
-**c) vysílač 9800 Bd, přijímač 9600 Bd**
-
-```
-relativní odchylka = |9800 − 9600| / 9600 ≈ 2,08 %
-```
-
-Rozdíl `200 Bd` je tedy prostě rozdíl rychlostí vysílače a přijímače; v poměru k nominální rychlosti je to odchylka hodin.
-
-Přijímač se synchronizuje na sestupné hraně START bitu a dál už jen odpočítává bitové intervaly `T`. Poslední vzorek je uprostřed STOP bitu: START (1) + 8 datových bitů (8) + polovina STOP bitu (0,5) = `9,5 T` od hrany. Každý bit chyba přibude, takže u posledního vzorku je největší:
-
-```
-posun = 9,5 · 2,08 % ≈ 0,198 bitu
-```
-
-Vzorek musí zůstat v rámci bitu, tj. posun < 0,5 bitu → `0,198 < 0,5` → **znak se přijme správně**.
-
-Přesněji: `9,5 T_rx` odpovídá `9,5 · 9800 / 9600 ≈ 9,70 T_tx` → pořád v intervalu STOP bitu `⟨9, 10)`.
-
-Mezní odchylka pro 8N1: `0,5 / 9,5 ≈ 5,3 %` (součet chyb obou stran; v praxi se doporučuje < 2 - 3 %).

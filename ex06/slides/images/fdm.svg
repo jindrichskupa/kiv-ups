@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 270" width="700" height="270" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<line x1="60" y1="190" x2="630" y2="190" stroke="#1f2328" stroke-width="1.5"/>
+<text x="636.0" y="195.0" font-size="13" fill="#656d76" text-anchor="start" >f [kHz]</text>
+<path d="M103.0,190 L106.0,100 L134.0,100 L137.0,190 Z" fill="#ddf4ff" stroke="#0969da"/>
+<text x="120.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >1</text>
+<path d="M143.0,190 L146.0,100 L174.0,100 L177.0,190 Z" fill="#dafbe1" stroke="#0969da"/>
+<text x="160.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >2</text>
+<path d="M183.0,190 L186.0,100 L214.0,100 L217.0,190 Z" fill="#fff8c5" stroke="#0969da"/>
+<text x="200.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >3</text>
+<path d="M223.0,190 L226.0,100 L254.0,100 L257.0,190 Z" fill="#ddf4ff" stroke="#0969da"/>
+<text x="240.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >4</text>
+<path d="M263.0,190 L266.0,100 L294.0,100 L297.0,190 Z" fill="#dafbe1" stroke="#0969da"/>
+<text x="280.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >5</text>
+<path d="M303.0,190 L306.0,100 L334.0,100 L337.0,190 Z" fill="#fff8c5" stroke="#0969da"/>
+<text x="320.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >6</text>
+<path d="M343.0,190 L346.0,100 L374.0,100 L377.0,190 Z" fill="#ddf4ff" stroke="#0969da"/>
+<text x="360.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >7</text>
+<path d="M383.0,190 L386.0,100 L414.0,100 L417.0,190 Z" fill="#dafbe1" stroke="#0969da"/>
+<text x="400.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >8</text>
+<path d="M423.0,190 L426.0,100 L454.0,100 L457.0,190 Z" fill="#fff8c5" stroke="#0969da"/>
+<text x="440.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >9</text>
+<path d="M463.0,190 L466.0,100 L494.0,100 L497.0,190 Z" fill="#ddf4ff" stroke="#0969da"/>
+<text x="480.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >10</text>
+<path d="M503.0,190 L506.0,100 L534.0,100 L537.0,190 Z" fill="#dafbe1" stroke="#0969da"/>
+<text x="520.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >11</text>
+<path d="M543.0,190 L546.0,100 L574.0,100 L577.0,190 Z" fill="#fff8c5" stroke="#0969da"/>
+<text x="560.0" y="90.0" font-size="13" fill="#1f2328" text-anchor="middle" >12</text>
+<line x1="100" y1="190" x2="100" y2="196" stroke="#1f2328"/>
+<text x="100.0" y="212.0" font-size="12" fill="#656d76" text-anchor="middle" >60</text>
+<line x1="220" y1="190" x2="220" y2="196" stroke="#1f2328"/>
+<text x="220.0" y="212.0" font-size="12" fill="#656d76" text-anchor="middle" >72</text>
+<line x1="340" y1="190" x2="340" y2="196" stroke="#1f2328"/>
+<text x="340.0" y="212.0" font-size="12" fill="#656d76" text-anchor="middle" >84</text>
+<line x1="460" y1="190" x2="460" y2="196" stroke="#1f2328"/>
+<text x="460.0" y="212.0" font-size="12" fill="#656d76" text-anchor="middle" >96</text>
+<line x1="580" y1="190" x2="580" y2="196" stroke="#1f2328"/>
+<text x="580.0" y="212.0" font-size="12" fill="#656d76" text-anchor="middle" >108</text>
+<path d="M100,224 v6 H140 v-6" fill="none" stroke="#cf222e"/>
+<text x="120.0" y="248.0" font-size="13" fill="#cf222e" text-anchor="start" >4 kHz = hlas 0,3–3,4 kHz + ochranné pásmo</text>
+<text x="20.0" y="26.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">FDM: 12 hovorů, každý na vlastní nosné (skupina 60–108 kHz)</text>
+</svg>

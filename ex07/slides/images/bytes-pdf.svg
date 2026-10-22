@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 266" width="770" height="266" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="28.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Byte stuffing: před každý řídicí znak v datech vlož DLE (0x10)</text>
+<text x="20.0" y="78.0" font-size="14" fill="#1f2328" text-anchor="start" font-weight="bold">data</text>
+<rect x="190" y="52" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="210.0" y="77.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">15</text>
+<rect x="230" y="52" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="250.0" y="77.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">2A</text>
+<rect x="270" y="52" width="40" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="290.0" y="77.0" font-size="15" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">02</text>
+<rect x="310" y="52" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="330.0" y="77.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">CC</text>
+<rect x="350" y="52" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="370.0" y="77.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">05</text>
+<rect x="390" y="52" width="40" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="410.0" y="77.0" font-size="15" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">03</text>
+<rect x="430" y="52" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="450.0" y="77.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">CD</text>
+<rect x="470" y="52" width="40" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="490.0" y="77.0" font-size="15" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">10</text>
+<rect x="510" y="52" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="530.0" y="77.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">12</text>
+<text x="20.0" y="136.0" font-size="14" fill="#1f2328" text-anchor="start" font-weight="bold">+ STX / ETX</text>
+<rect x="190" y="110" width="40" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="210.0" y="135.0" font-size="15" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">02</text>
+<rect x="230" y="110" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="250.0" y="135.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">15</text>
+<rect x="270" y="110" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="290.0" y="135.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">2A</text>
+<rect x="310" y="110" width="40" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="330.0" y="135.0" font-size="15" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">02</text>
+<rect x="350" y="110" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="370.0" y="135.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">CC</text>
+<rect x="390" y="110" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="410.0" y="135.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">05</text>
+<rect x="430" y="110" width="40" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="450.0" y="135.0" font-size="15" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">03</text>
+<rect x="470" y="110" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="490.0" y="135.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">CD</text>
+<rect x="510" y="110" width="40" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="530.0" y="135.0" font-size="15" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">10</text>
+<rect x="550" y="110" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="570.0" y="135.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">12</text>
+<rect x="590" y="110" width="40" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="610.0" y="135.0" font-size="15" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">03</text>
+<text x="20.0" y="194.0" font-size="14" fill="#1f2328" text-anchor="start" font-weight="bold">byte stuffing</text>
+<rect x="190" y="168" width="40" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="210.0" y="193.0" font-size="15" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">02</text>
+<rect x="230" y="168" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="250.0" y="193.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">15</text>
+<rect x="270" y="168" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="290.0" y="193.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">2A</text>
+<rect x="310" y="168" width="40" height="38" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="330.0" y="193.0" font-size="15" fill="#0969da" text-anchor="middle" font-family="monospace" font-weight="bold">10</text>
+<rect x="350" y="168" width="40" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="370.0" y="193.0" font-size="15" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">02</text>
+<rect x="390" y="168" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="410.0" y="193.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">CC</text>
+<rect x="430" y="168" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="450.0" y="193.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">05</text>
+<rect x="470" y="168" width="40" height="38" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="490.0" y="193.0" font-size="15" fill="#0969da" text-anchor="middle" font-family="monospace" font-weight="bold">10</text>
+<rect x="510" y="168" width="40" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="530.0" y="193.0" font-size="15" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">03</text>
+<rect x="550" y="168" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="570.0" y="193.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">CD</text>
+<rect x="590" y="168" width="40" height="38" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="610.0" y="193.0" font-size="15" fill="#0969da" text-anchor="middle" font-family="monospace" font-weight="bold">10</text>
+<rect x="630" y="168" width="40" height="38" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="650.0" y="193.0" font-size="15" fill="#cf222e" text-anchor="middle" font-family="monospace" font-weight="bold">10</text>
+<rect x="670" y="168" width="40" height="38" fill="#ffffff" stroke="#d0d7de"/>
+<text x="690.0" y="193.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="monospace">12</text>
+<rect x="710" y="168" width="40" height="38" fill="#dafbe1" stroke="#d0d7de"/>
+<text x="730.0" y="193.0" font-size="15" fill="#1a7f37" text-anchor="middle" font-family="monospace" font-weight="bold">03</text>
+<rect x="20" y="236" width="14" height="14" fill="#dafbe1" stroke="#1a7f37"/>
+<text x="40.0" y="248.0" font-size="13" fill="#656d76" text-anchor="start" >řídicí znak / vlajka</text>
+<rect x="240" y="236" width="14" height="14" fill="#ffebe9" stroke="#cf222e"/>
+<text x="260.0" y="248.0" font-size="13" fill="#656d76" text-anchor="start" >data = řídicí kombinace</text>
+<rect x="460" y="236" width="14" height="14" fill="#ddf4ff" stroke="#0969da"/>
+<text x="480.0" y="248.0" font-size="13" fill="#656d76" text-anchor="start" >vložené</text>
+</svg>

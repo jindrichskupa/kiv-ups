@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 396" width="820" height="396" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="28.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">UDP: bez spojení, adresa v každém volání</text>
+<text x="230.0" y="62.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">Server</text>
+<text x="590.0" y="62.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">Klient</text>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker></defs>
+<line x1="230" y1="70" x2="230" y2="346" stroke="#656d76" stroke-dasharray="5 4"/>
+<line x1="590" y1="70" x2="590" y2="346" stroke="#656d76" stroke-dasharray="5 4"/>
+<rect x="225" y="166" width="10" height="38" fill="#cf222e" opacity="0.75"/>
+<rect x="585" y="204" width="10" height="76" fill="#cf222e" opacity="0.75"/>
+<text x="216.0" y="95.0" font-size="14" fill="#1f2328" text-anchor="end" font-family="monospace">socket()</text>
+<text x="604.0" y="95.0" font-size="14" fill="#1f2328" text-anchor="start" font-family="monospace">socket()</text>
+<text x="216.0" y="133.0" font-size="14" fill="#1f2328" text-anchor="end" font-family="monospace">bind(4242)</text>
+<text x="216.0" y="171.0" font-size="14" fill="#1f2328" text-anchor="end" font-family="monospace">recvfrom()</text>
+<text x="604.0" y="171.0" font-size="14" fill="#1f2328" text-anchor="start" font-family="monospace">sendto("Ahoj", srv)</text>
+<line x1="584" y1="166" x2="236" y2="196.4" stroke="#0969da" stroke-width="2" marker-end="url(#ar)"/>
+<text x="410.0" y="175.2" font-size="13" fill="#0969da" text-anchor="middle" >Ahoj</text>
+<text x="216.0" y="209.0" font-size="14" fill="#1f2328" text-anchor="end" font-family="monospace">← 4 + adresa klienta</text>
+<text x="604.0" y="209.0" font-size="14" fill="#1f2328" text-anchor="start" font-family="monospace">recvfrom()</text>
+<text x="216.0" y="247.0" font-size="14" fill="#1f2328" text-anchor="end" font-family="monospace">sendto("OK", klient)</text>
+<line x1="236" y1="242" x2="584" y2="272.4" stroke="#0969da" stroke-width="2" marker-end="url(#ar)"/>
+<text x="410.0" y="251.2" font-size="13" fill="#0969da" text-anchor="middle" >OK</text>
+<text x="604.0" y="285.0" font-size="14" fill="#1f2328" text-anchor="start" font-family="monospace">← 2 + adresa serveru</text>
+<text x="216.0" y="323.0" font-size="14" fill="#1f2328" text-anchor="end" font-family="monospace">close()</text>
+<text x="604.0" y="323.0" font-size="14" fill="#1f2328" text-anchor="start" font-family="monospace">close()</text>
+<rect x="20" y="366" width="10" height="14" fill="#cf222e" opacity="0.75"/>
+<text x="38.0" y="378.0" font-size="13" fill="#656d76" text-anchor="start" >červeně = blokuje; žádný handshake ani FIN; klient bind() nevolá - port přidělí systém při prvním sendto()</text>
+</svg>

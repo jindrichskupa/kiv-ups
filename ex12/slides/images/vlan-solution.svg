@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 370" width="760" height="370" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="26.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Řešení 3: access porty podle oddělení, mezi switchi a k routeru trunk</text>
+<line x1="220" y1="160" x2="560" y2="160" stroke="#1f2328" stroke-width="4"/>
+<rect x="342.8" y="136.0" width="94.4" height="19" rx="3" fill="#fff" opacity="0.9"/>
+<text x="390.0" y="150.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">trunk 10, 20</text>
+<text x="301.6" y="152.0" font-size="12" fill="#656d76" text-anchor="start" font-family="monospace">G0/1</text>
+<text x="438.4" y="152.0" font-size="12" fill="#656d76" text-anchor="start" font-family="monospace">G0/1</text>
+<line x1="560" y1="160" x2="560" y2="60" stroke="#1f2328" stroke-width="4"/>
+<rect x="568.4" y="100.0" width="123.2" height="19" rx="3" fill="#fff" opacity="0.9"/>
+<text x="630.0" y="114.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">trunk 10, 20, 30</text>
+<text x="568.0" y="136.0" font-size="12" fill="#656d76" text-anchor="start" font-family="monospace">G0/2</text>
+<text x="568.0" y="94.0" font-size="12" fill="#656d76" text-anchor="start" font-family="monospace">G0/0</text>
+<line x1="220" y1="160" x2="70" y2="290" stroke="#0969da" stroke-width="3"/>
+<text x="62.0" y="254.8" font-size="12" fill="#656d76" text-anchor="start" font-family="monospace">Fa0/1</text>
+<line x1="220" y1="160" x2="180" y2="290" stroke="#0969da" stroke-width="3"/>
+<text x="145.6" y="254.8" font-size="12" fill="#656d76" text-anchor="start" font-family="monospace">Fa0/2</text>
+<line x1="220" y1="160" x2="290" y2="290" stroke="#1a7f37" stroke-width="3"/>
+<text x="279.2" y="254.8" font-size="12" fill="#656d76" text-anchor="start" font-family="monospace">Fa0/3</text>
+<line x1="560" y1="160" x2="440" y2="290" stroke="#0969da" stroke-width="3"/>
+<text x="424.8" y="254.8" font-size="12" fill="#656d76" text-anchor="start" font-family="monospace">Fa0/1</text>
+<line x1="560" y1="160" x2="560" y2="290" stroke="#bc4c00" stroke-width="3"/>
+<text x="566.0" y="254.8" font-size="12" fill="#656d76" text-anchor="start" font-family="monospace">Fa0/2</text>
+<line x1="560" y1="160" x2="680" y2="290" stroke="#1a7f37" stroke-width="3"/>
+<text x="657.2" y="254.8" font-size="12" fill="#656d76" text-anchor="start" font-family="monospace">Fa0/3</text>
+<circle cx="560" cy="60" r="24" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<text x="560.0" y="65.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">R</text>
+<rect x="182" y="143" width="76" height="34" rx="6" fill="#dafbe1" stroke="#1a7f37" stroke-width="2"/>
+<text x="220.0" y="165.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">SW1</text>
+<rect x="522" y="143" width="76" height="34" rx="6" fill="#dafbe1" stroke="#1a7f37" stroke-width="2"/>
+<text x="560.0" y="165.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">SW2</text>
+<rect x="46" y="275" width="48" height="30" rx="3" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+<text x="70.0" y="295.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">PC1</text>
+<text x="70.0" y="322.0" font-size="12" fill="#656d76" text-anchor="middle" >VLAN 10</text>
+<text x="70.0" y="338.0" font-size="12" fill="#656d76" text-anchor="middle" >192.168.10.11</text>
+<rect x="156" y="275" width="48" height="30" rx="3" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+<text x="180.0" y="295.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">PC2</text>
+<text x="180.0" y="322.0" font-size="12" fill="#656d76" text-anchor="middle" >VLAN 10</text>
+<text x="180.0" y="338.0" font-size="12" fill="#656d76" text-anchor="middle" >192.168.10.12</text>
+<rect x="266" y="275" width="48" height="30" rx="3" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="290.0" y="295.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">PC3</text>
+<text x="290.0" y="322.0" font-size="12" fill="#656d76" text-anchor="middle" >VLAN 20</text>
+<text x="290.0" y="338.0" font-size="12" fill="#656d76" text-anchor="middle" >192.168.20.13</text>
+<rect x="416" y="275" width="48" height="30" rx="3" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+<text x="440.0" y="295.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">PC4</text>
+<text x="440.0" y="322.0" font-size="12" fill="#656d76" text-anchor="middle" >VLAN 10</text>
+<text x="440.0" y="338.0" font-size="12" fill="#656d76" text-anchor="middle" >192.168.10.14</text>
+<rect x="536" y="275" width="48" height="30" rx="3" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+<text x="560.0" y="295.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">PC5</text>
+<text x="560.0" y="322.0" font-size="12" fill="#656d76" text-anchor="middle" >VLAN 30</text>
+<text x="560.0" y="338.0" font-size="12" fill="#656d76" text-anchor="middle" >192.168.30.15</text>
+<rect x="656" y="275" width="48" height="30" rx="3" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="680.0" y="295.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">PC6</text>
+<text x="680.0" y="322.0" font-size="12" fill="#656d76" text-anchor="middle" >VLAN 20</text>
+<text x="680.0" y="338.0" font-size="12" fill="#656d76" text-anchor="middle" >192.168.20.16</text>
+</svg>

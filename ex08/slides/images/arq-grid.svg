@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 944 320" width="944" height="320" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="28.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Příklad: Ws = 4, F2 se ztratí, timeout 5 jednotek, cesta 1,5 jednotky</text>
+<text x="20.0" y="105.0" font-size="14" fill="#1f2328" text-anchor="start" font-weight="bold">Odesílatel</text>
+<text x="20.0" y="265.0" font-size="14" fill="#1f2328" text-anchor="start" font-weight="bold">Příjemce</text>
+<line x1="120" y1="100" x2="120" y2="260" stroke="#eef1f4"/>
+<text x="120.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >0</text>
+<line x1="176" y1="100" x2="176" y2="260" stroke="#eef1f4"/>
+<text x="176.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >1</text>
+<line x1="232" y1="100" x2="232" y2="260" stroke="#eef1f4"/>
+<text x="232.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >2</text>
+<line x1="288" y1="100" x2="288" y2="260" stroke="#eef1f4"/>
+<text x="288.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >3</text>
+<line x1="344" y1="100" x2="344" y2="260" stroke="#eef1f4"/>
+<text x="344.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >4</text>
+<line x1="400" y1="100" x2="400" y2="260" stroke="#eef1f4"/>
+<text x="400.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >5</text>
+<line x1="456" y1="100" x2="456" y2="260" stroke="#eef1f4"/>
+<text x="456.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >6</text>
+<line x1="512" y1="100" x2="512" y2="260" stroke="#eef1f4"/>
+<text x="512.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >7</text>
+<line x1="568" y1="100" x2="568" y2="260" stroke="#eef1f4"/>
+<text x="568.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >8</text>
+<line x1="624" y1="100" x2="624" y2="260" stroke="#eef1f4"/>
+<text x="624.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >9</text>
+<line x1="680" y1="100" x2="680" y2="260" stroke="#eef1f4"/>
+<text x="680.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >10</text>
+<line x1="736" y1="100" x2="736" y2="260" stroke="#eef1f4"/>
+<text x="736.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >11</text>
+<line x1="792" y1="100" x2="792" y2="260" stroke="#eef1f4"/>
+<text x="792.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >12</text>
+<line x1="848" y1="100" x2="848" y2="260" stroke="#eef1f4"/>
+<text x="848.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >13</text>
+<line x1="904" y1="100" x2="904" y2="260" stroke="#eef1f4"/>
+<text x="904.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >14</text>
+<line x1="120" y1="100" x2="914" y2="100" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="120" y1="260" x2="914" y2="260" stroke="#1f2328" stroke-width="1.5"/>
+<text x="920.0" y="300.0" font-size="12" fill="#656d76" text-anchor="start" font-style="italic">t</text>
+</svg>

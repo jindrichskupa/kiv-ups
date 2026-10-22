@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 744 346" width="744" height="346" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="26.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Řešení 3: stav bufferu parseru po každém recv()</text>
+<text x="20.0" y="70.0" font-size="13" fill="#1f2328" text-anchor="start" font-weight="bold">po recv 1</text>
+<rect x="110.0" y="50" width="88.0" height="30" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="154.0" y="70.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="Menlo, Consolas, monospace">KIVUPSco</text>
+<text x="110.0" y="116.0" font-size="13" fill="#656d76" text-anchor="start" >8 B &lt; 14 B hlavičky → čekej</text>
+<text x="20.0" y="162.0" font-size="13" fill="#1f2328" text-anchor="start" font-weight="bold">po recv 2</text>
+<rect x="110.0" y="142" width="220.0" height="30" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="220.0" y="162.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="Menlo, Consolas, monospace">KIVUPSconn000604Pepa</text>
+<text x="220.0" y="190.0" font-size="10" fill="#656d76" text-anchor="middle" >conn: 14 + 6 = 20 B → hotová zpráva</text>
+<rect x="330.0" y="142" width="132.0" height="30" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="396.0" y="162.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="Menlo, Consolas, monospace">KIVUPSchat00</text>
+<text x="396.0" y="190.0" font-size="10" fill="#656d76" text-anchor="middle" >zbytek 12 B → čekej</text>
+<text x="110.0" y="208.0" font-size="13" fill="#1a7f37" text-anchor="start" >1 zpráva ven, 12 B zůstává</text>
+<text x="20.0" y="254.0" font-size="13" fill="#1f2328" text-anchor="start" font-weight="bold">po recv 3</text>
+<rect x="110.0" y="234" width="374.0" height="30" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="297.0" y="254.0" font-size="15" fill="#1f2328" text-anchor="middle" font-family="Menlo, Consolas, monospace">KIVUPSchat0020005Ahoj!01color03red</text>
+<text x="297.0" y="282.0" font-size="10" fill="#656d76" text-anchor="middle" >chat: 14 + 20 = 34 B → hotová zpráva</text>
+<text x="110.0" y="300.0" font-size="13" fill="#1a7f37" text-anchor="start" >1 zpráva ven, buffer prázdný</text>
+<text x="20.0" y="332.0" font-size="12" fill="#656d76" text-anchor="start" font-family="Menlo, Consolas, monospace">recv 1 = "KIVUPSco", recv 2 = "nn000604PepaKIVUPSchat00", recv 3 = "20005Ahoj!01color03red"</text>
+</svg>

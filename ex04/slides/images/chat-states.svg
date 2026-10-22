@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" width="920" height="300" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2328"/></marker><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker></defs>
+<text x="60.0" y="108.0" font-size="12" fill="#656d76" text-anchor="middle" >TCP spojení</text><text x="60.0" y="124.0" font-size="12" fill="#656d76" text-anchor="middle" >navázáno</text>
+<path d="M30,140 L118,140" fill="none" stroke="#1f2328" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="120" y="117" width="170" height="46" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/><text x="205.0" y="145.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">CONNECTED</text>
+<path d="M290,140 L398,140" fill="none" stroke="#1f2328" stroke-width="1.6" marker-end="url(#ar)"/><text x="344.0" y="130.0" font-size="12" fill="#1f2328" text-anchor="middle" >NickMessage</text>
+<rect x="400" y="117" width="170" height="46" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/><text x="485.0" y="145.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">CHATTING</text>
+<path d="M455,117 C440,50 530,50 515,117" fill="none" stroke="#1f2328" stroke-width="1.6" marker-end="url(#ar)"/><text x="485.0" y="58.0" font-size="12" fill="#1f2328" text-anchor="middle" >ChatMessage</text>
+<path d="M455,163 C440,230 530,230 515,163" fill="none" stroke="#1f2328" stroke-width="1.6" marker-end="url(#ar)"/><text x="485.0" y="232.0" font-size="12" fill="#1f2328" text-anchor="middle" >NickMessage</text>
+<path d="M570,140 L678,140" fill="none" stroke="#1f2328" stroke-width="1.6" marker-end="url(#ar)"/><text x="624.0" y="130.0" font-size="12" fill="#1f2328" text-anchor="middle" >ExitMessage</text>
+<rect x="680" y="117" width="170" height="46" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/><text x="765.0" y="145.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">DISCONNECTED</text>
+<path d="M850,140 L900,140" fill="none" stroke="#1f2328" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="900.0" y="108.0" font-size="12" fill="#656d76" text-anchor="end" >TCP spojení</text><text x="900.0" y="124.0" font-size="12" fill="#656d76" text-anchor="end" >ukončeno</text>
+<path d="M205,163 C205,290 765,290 765,165" fill="none" stroke="#cf222e" stroke-width="1.6" marker-end="url(#arr)" stroke-dasharray="6 4"/><text x="485.0" y="282.0" font-size="12" fill="#cf222e" text-anchor="middle" >TCP spojení spadlo (recv vrátí 0 / −1) – z libovolného stavu</text>
+</svg>

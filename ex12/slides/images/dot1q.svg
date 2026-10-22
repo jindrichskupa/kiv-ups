@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 815.0 250" width="815.0" height="250" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="28.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Ethernetový rámec s tagem 802.1Q (vložené 4 B červeně)</text>
+<rect x="20" y="60" width="125" height="50" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="82.5" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" >cílová MAC</text>
+<text x="82.5" y="128.0" font-size="12" fill="#656d76" text-anchor="middle" >6 B</text>
+<rect x="145" y="60" width="125" height="50" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="207.5" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" >zdrojová MAC</text>
+<text x="207.5" y="128.0" font-size="12" fill="#656d76" text-anchor="middle" >6 B</text>
+<rect x="270" y="60" width="85.0" height="50" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="312.5" y="78.0" font-size="13" fill="#1f2328" text-anchor="middle" >TPID</text>
+<text x="312.5" y="94.0" font-size="13" fill="#1f2328" text-anchor="middle" >0x8100</text>
+<text x="312.5" y="128.0" font-size="12" fill="#656d76" text-anchor="middle" >2 B</text>
+<rect x="355.0" y="60" width="85.0" height="50" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="397.5" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" >TCI</text>
+<text x="397.5" y="128.0" font-size="12" fill="#656d76" text-anchor="middle" >2 B</text>
+<rect x="440.0" y="60" width="90.0" height="50" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="485.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" >EtherType</text>
+<text x="485.0" y="128.0" font-size="12" fill="#656d76" text-anchor="middle" >2 B</text>
+<rect x="530.0" y="60" width="200" height="50" fill="#ddf4ff" stroke="#d0d7de"/>
+<text x="630.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" >data 46–1500 B</text>
+<rect x="730.0" y="60" width="65.0" height="50" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="762.5" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" >FCS</text>
+<text x="762.5" y="128.0" font-size="12" fill="#656d76" text-anchor="middle" >4 B</text>
+<path d="M355.0,110 L190,170 M440.0,110 L710,170" stroke="#656d76" fill="none" stroke-dasharray="3 3"/>
+<rect x="190" y="170" width="130" height="40" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="255.0" y="195.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">PCP (3 b)</text>
+<text x="255.0" y="228.0" font-size="12" fill="#656d76" text-anchor="middle" >priorita 0–7</text>
+<rect x="320" y="170" width="70" height="40" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="355.0" y="195.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">DEI (1 b)</text>
+<text x="355.0" y="228.0" font-size="12" fill="#656d76" text-anchor="middle" >drop</text>
+<rect x="390" y="170" width="320" height="40" fill="#ffebe9" stroke="#d0d7de"/>
+<text x="550.0" y="195.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">VID (12 b)</text>
+<text x="550.0" y="228.0" font-size="12" fill="#656d76" text-anchor="middle" >číslo VLAN</text>
+</svg>

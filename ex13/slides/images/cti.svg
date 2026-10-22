@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190" width="720" height="190" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="26.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Příklad 5: linka C – N vypadne</text>
+<line x1="90" y1="100" x2="270" y2="100" stroke="#656d76" stroke-width="2"/>
+<line x1="270" y1="100" x2="450" y2="100" stroke="#656d76" stroke-width="2"/>
+<line x1="450" y1="100" x2="640" y2="100" stroke="#cf222e" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M535.0,90.0 L555.0,110.0 M555.0,90.0 L535.0,110.0" stroke="#cf222e" stroke-width="4"/>
+<circle cx="90" cy="100" r="24" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<text x="90.0" y="105.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="270" cy="100" r="24" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<text x="270.0" y="105.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">B</text>
+<circle cx="450" cy="100" r="24" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<text x="450.0" y="105.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">C</text>
+<ellipse cx="640" cy="100" rx="54" ry="22" fill="#fff8c5" stroke="#9a6700" stroke-width="1.5"/>
+<text x="640.0" y="105.0" font-size="13" fill="#1f2328" text-anchor="middle" font-weight="bold">síť N</text>
+<text x="20.0" y="176.0" font-size="13" fill="#656d76" text-anchor="start" >před výpadkem: A → N = 3, B → N = 2, C → N = 1 (skoky)</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 944 320" width="944" height="320" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<defs><marker id="aok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker><marker id="adiscard" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#656d76"/></marker><marker id="abuffer" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9a6700"/></marker><marker id="aack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/></marker></defs><text x="20.0" y="28.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Řešení: Go-Back-N, Ws = 4, ztracený F2, timeout 5</text>
+<text x="20.0" y="105.0" font-size="14" fill="#1f2328" text-anchor="start" font-weight="bold">Odesílatel</text>
+<text x="20.0" y="265.0" font-size="14" fill="#1f2328" text-anchor="start" font-weight="bold">Příjemce</text>
+<line x1="120" y1="100" x2="120" y2="260" stroke="#eef1f4"/>
+<text x="120.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >0</text>
+<line x1="176" y1="100" x2="176" y2="260" stroke="#eef1f4"/>
+<text x="176.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >1</text>
+<line x1="232" y1="100" x2="232" y2="260" stroke="#eef1f4"/>
+<text x="232.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >2</text>
+<line x1="288" y1="100" x2="288" y2="260" stroke="#eef1f4"/>
+<text x="288.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >3</text>
+<line x1="344" y1="100" x2="344" y2="260" stroke="#eef1f4"/>
+<text x="344.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >4</text>
+<line x1="400" y1="100" x2="400" y2="260" stroke="#eef1f4"/>
+<text x="400.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >5</text>
+<line x1="456" y1="100" x2="456" y2="260" stroke="#eef1f4"/>
+<text x="456.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >6</text>
+<line x1="512" y1="100" x2="512" y2="260" stroke="#eef1f4"/>
+<text x="512.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >7</text>
+<line x1="568" y1="100" x2="568" y2="260" stroke="#eef1f4"/>
+<text x="568.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >8</text>
+<line x1="624" y1="100" x2="624" y2="260" stroke="#eef1f4"/>
+<text x="624.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >9</text>
+<line x1="680" y1="100" x2="680" y2="260" stroke="#eef1f4"/>
+<text x="680.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >10</text>
+<line x1="736" y1="100" x2="736" y2="260" stroke="#eef1f4"/>
+<text x="736.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >11</text>
+<line x1="792" y1="100" x2="792" y2="260" stroke="#eef1f4"/>
+<text x="792.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >12</text>
+<line x1="848" y1="100" x2="848" y2="260" stroke="#eef1f4"/>
+<text x="848.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >13</text>
+<line x1="904" y1="100" x2="904" y2="260" stroke="#eef1f4"/>
+<text x="904.0" y="300.0" font-size="11" fill="#656d76" text-anchor="middle" >14</text>
+<line x1="120" y1="100" x2="914" y2="100" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="120" y1="260" x2="914" y2="260" stroke="#1f2328" stroke-width="1.5"/>
+<text x="920.0" y="300.0" font-size="12" fill="#656d76" text-anchor="start" font-style="italic">t</text>
+<line x1="120" y1="100" x2="204.0" y2="260" stroke="#0969da" stroke-width="2" marker-end="url(#aok)"/>
+<rect x="104" y="70" width="32" height="22" fill="#ddf4ff" stroke="#0969da"/>
+<text x="120.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" font-family="monospace">F0</text>
+<line x1="176" y1="100" x2="260.0" y2="260" stroke="#0969da" stroke-width="2" marker-end="url(#aok)"/>
+<rect x="160" y="70" width="32" height="22" fill="#ddf4ff" stroke="#0969da"/>
+<text x="176.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" font-family="monospace">F1</text>
+<line x1="232" y1="100" x2="278.20000000000005" y2="188.0" stroke="#cf222e" stroke-width="2"/>
+<text x="280.2" y="196.0" font-size="22" fill="#cf222e" text-anchor="middle" >✗</text>
+<rect x="216" y="70" width="32" height="22" fill="#ddf4ff" stroke="#cf222e"/>
+<text x="232.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" font-family="monospace">F2</text>
+<line x1="288" y1="100" x2="372.0" y2="260" stroke="#656d76" stroke-width="2" marker-end="url(#adiscard)"/>
+<text x="372.0" y="282.0" font-size="11" fill="#656d76" text-anchor="middle" >zahodí</text>
+<rect x="272" y="70" width="32" height="22" fill="#ddf4ff" stroke="#656d76"/>
+<text x="288.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" font-family="monospace">F3</text>
+<line x1="344" y1="100" x2="428.0" y2="260" stroke="#656d76" stroke-width="2" marker-end="url(#adiscard)"/>
+<text x="428.0" y="282.0" font-size="11" fill="#656d76" text-anchor="middle" >zahodí</text>
+<rect x="328" y="70" width="32" height="22" fill="#ddf4ff" stroke="#656d76"/>
+<text x="344.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" font-family="monospace">F4</text>
+<line x1="400" y1="100" x2="484.0" y2="260" stroke="#656d76" stroke-width="2" marker-end="url(#adiscard)"/>
+<text x="484.0" y="282.0" font-size="11" fill="#656d76" text-anchor="middle" >zahodí</text>
+<rect x="384" y="70" width="32" height="22" fill="#ddf4ff" stroke="#656d76"/>
+<text x="400.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" font-family="monospace">F5</text>
+<line x1="512" y1="100" x2="596.0" y2="260" stroke="#0969da" stroke-width="2" marker-end="url(#aok)"/>
+<rect x="496" y="70" width="32" height="22" fill="#ddf4ff" stroke="#0969da"/>
+<text x="512.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" font-family="monospace">F2</text>
+<line x1="568" y1="100" x2="652.0" y2="260" stroke="#0969da" stroke-width="2" marker-end="url(#aok)"/>
+<rect x="552" y="70" width="32" height="22" fill="#ddf4ff" stroke="#0969da"/>
+<text x="568.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" font-family="monospace">F3</text>
+<line x1="624" y1="100" x2="708.0" y2="260" stroke="#0969da" stroke-width="2" marker-end="url(#aok)"/>
+<rect x="608" y="70" width="32" height="22" fill="#ddf4ff" stroke="#0969da"/>
+<text x="624.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" font-family="monospace">F4</text>
+<line x1="680" y1="100" x2="764.0" y2="260" stroke="#0969da" stroke-width="2" marker-end="url(#aok)"/>
+<rect x="664" y="70" width="32" height="22" fill="#ddf4ff" stroke="#0969da"/>
+<text x="680.0" y="86.0" font-size="13" fill="#1f2328" text-anchor="middle" font-family="monospace">F5</text>
+<line x1="204.0" y1="260" x2="288.0" y2="100" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#aack)"/>
+<text x="208.0" y="254.0" font-size="11" fill="#1a7f37" text-anchor="start" >ACK0</text>
+<line x1="260.0" y1="260" x2="344.0" y2="100" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#aack)"/>
+<text x="264.0" y="254.0" font-size="11" fill="#1a7f37" text-anchor="start" >ACK1</text>
+<line x1="372.0" y1="260" x2="456.0" y2="100" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#aack)"/>
+<text x="376.0" y="254.0" font-size="11" fill="#1a7f37" text-anchor="start" >ACK1</text>
+<line x1="428.0" y1="260" x2="512.0" y2="100" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#aack)"/>
+<text x="432.0" y="254.0" font-size="11" fill="#1a7f37" text-anchor="start" >ACK1</text>
+<line x1="484.0" y1="260" x2="568.0" y2="100" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#aack)"/>
+<text x="488.0" y="254.0" font-size="11" fill="#1a7f37" text-anchor="start" >ACK1</text>
+<line x1="596.0" y1="260" x2="680.0" y2="100" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#aack)"/>
+<text x="600.0" y="254.0" font-size="11" fill="#1a7f37" text-anchor="start" >ACK2</text>
+<line x1="652.0" y1="260" x2="736.0" y2="100" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#aack)"/>
+<text x="656.0" y="254.0" font-size="11" fill="#1a7f37" text-anchor="start" >ACK3</text>
+<line x1="708.0" y1="260" x2="792.0" y2="100" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#aack)"/>
+<text x="712.0" y="254.0" font-size="11" fill="#1a7f37" text-anchor="start" >ACK4</text>
+<line x1="764.0" y1="260" x2="848.0" y2="100" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#aack)"/>
+<text x="768.0" y="254.0" font-size="11" fill="#1a7f37" text-anchor="start" >ACK5</text>
+<text x="512.0" y="60.0" font-size="12" fill="#cf222e" text-anchor="middle" >timeout F2 → znovu F2–F5</text>
+</svg>

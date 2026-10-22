@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 290" width="820" height="290" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20.0" y="26.0" font-size="16" fill="#1f2328" text-anchor="start" font-weight="bold">Dva počítače za jedním NATem, oba na stejný server</text>
+<line x1="90" y1="90" x2="260" y2="160" stroke="#57606a" stroke-width="2"/>
+<line x1="90" y1="230" x2="260" y2="160" stroke="#57606a" stroke-width="2"/>
+<line x1="260" y1="160" x2="470" y2="160" stroke="#57606a" stroke-width="2"/>
+<line x1="560" y1="160" x2="700" y2="160" stroke="#57606a" stroke-width="2"/>
+<rect x="68" y="72" width="44" height="30" rx="3" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<rect x="82" y="102" width="16" height="6" fill="#0969da"/>
+<rect x="74" y="108" width="32" height="3" fill="#0969da"/>
+<text x="90.0" y="130.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">PC1 192.168.0.10</text>
+<rect x="68" y="212" width="44" height="30" rx="3" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<rect x="82" y="242" width="16" height="6" fill="#0969da"/>
+<rect x="74" y="248" width="32" height="3" fill="#0969da"/>
+<text x="90.0" y="270.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">PC2 192.168.0.11</text>
+<circle cx="260" cy="160" r="24" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<line x1="265" y1="165" x2="275" y2="175" stroke="#0969da" stroke-width="2.5"/>
+<line x1="255" y1="155" x2="245" y2="145" stroke="#0969da" stroke-width="2.5"/>
+<line x1="275" y1="145" x2="265" y2="155" stroke="#0969da" stroke-width="2.5"/>
+<line x1="245" y1="175" x2="255" y2="165" stroke="#0969da" stroke-width="2.5"/>
+<text x="260.0" y="202.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">R1 84.14.25.201</text>
+<g fill="#f6f8fa" stroke="#57606a" stroke-width="1.5">
+<ellipse cx="484.8" cy="163.0" rx="23.1" ry="15.1"/>
+<ellipse cx="504.0" cy="149.5" rx="24.8" ry="16.2"/>
+<ellipse cx="528.8" cy="151.0" rx="23.1" ry="15.1"/>
+<ellipse cx="545.2" cy="162.4" rx="22.0" ry="14.4"/>
+<ellipse cx="523.2" cy="169.0" rx="24.8" ry="16.2"/>
+<ellipse cx="501.2" cy="169.0" rx="23.1" ry="15.1"/>
+</g>
+<ellipse cx="515" cy="160" rx="41.2" ry="18.0" fill="#f6f8fa"/>
+<text x="515.0" y="165.0" font-size="15" fill="#1f2328" text-anchor="middle" font-weight="bold">Internet</text>
+<rect x="702" y="130" width="36" height="60" rx="3" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+<line x1="710" y1="140" x2="730" y2="140" stroke="#0969da" stroke-width="2"/>
+<line x1="710" y1="149" x2="730" y2="149" stroke="#0969da" stroke-width="2"/>
+<line x1="710" y1="158" x2="730" y2="158" stroke="#0969da" stroke-width="2"/>
+<line x1="710" y1="167" x2="730" y2="167" stroke="#0969da" stroke-width="2"/>
+<text x="720.0" y="210.0" font-size="14" fill="#1f2328" text-anchor="middle" font-weight="bold">server 47.85.1.25:80</text>
+<text x="160.0" y="105.0" font-size="13" fill="#0969da" text-anchor="start" font-family="monospace">:51000</text>
+<text x="160.0" y="222.0" font-size="13" fill="#0969da" text-anchor="start" font-family="monospace">:51000</text>
+<text x="370.0" y="125.0" font-size="22" fill="#cf222e" text-anchor="middle" font-weight="bold">?</text>
+</svg>

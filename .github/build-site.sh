@@ -10,7 +10,15 @@ mkdir -p "$OUT"
 for md in ex*/slides/ex[0-9][0-9].md; do
     ex=${md%%/*}
     mkdir -p "$OUT/$ex"
-    marp --html "$md" -o "$OUT/$ex/index.html"
+    # Slidy s <!-- bonus --> jdou jen do plné verze (plna.html); index.html = co se stihne na cvičení.
+    if grep -q '<!-- bonus -->' "$md"; then
+        marp --no-stdin --html "$md" -o "$OUT/$ex/plna.html"
+        python3 -c 'import sys; s = open(sys.argv[1], encoding="utf-8").read(); sys.stdout.write("\n---\n".join(x for x in s.split("\n---\n") if "<!-- bonus -->" not in x))' "$md" > "$OUT/$ex/cviceni.md"
+        marp --no-stdin --html "$OUT/$ex/cviceni.md" -o "$OUT/$ex/index.html"
+        rm "$OUT/$ex/cviceni.md"
+    else
+        marp --no-stdin --html "$md" -o "$OUT/$ex/index.html"
+    fi
     [ -d "$ex/slides/images" ] && cp -r "$ex/slides/images" "$OUT/$ex/"
 done
 
@@ -22,7 +30,8 @@ while IFS= read -r line; do
     [ -f "$OUT/$ex/index.html" ] || continue
     n=$((10#${ex#ex}))
     extra=""
-    [ -f "$ex/slides/$ex-reseni.md" ] && extra=" <a class=\"sub\" href=\"$REPO/$ex/slides/$ex-reseni.md\">řešení příkladů</a>"
+    [ -f "$OUT/$ex/plna.html" ] && extra+=" <a class=\"sub\" href=\"$ex/plna.html\">plná verze</a>"
+    [ -f "$ex/slides/$ex-reseni.md" ] && extra+=" <a class=\"sub\" href=\"$REPO/$ex/slides/$ex-reseni.md\">řešení příkladů</a>"
     items+="<li><a href=\"$ex/\"><span class=\"n\">$n.</span> $title</a>$extra</li>"$'\n'
 done < <(grep -E '^[0-9]+\. \[' README.md)
 
@@ -51,7 +60,7 @@ cat > "$OUT/index.html" <<EOF
 <body>
 <main>
 <h1>KIV/UPS</h1>
-<p>Slidy ke cvičením. Ovládání: šipky, F = celá obrazovka. Zdroj: <a href="https://github.com/jindrichskupa/kiv-ups">github.com/jindrichskupa/kiv-ups</a></p>
+<p>Slidy ke cvičením (verze na cvičení; plná verze obsahuje i bonusové příklady). Ovládání: šipky, F = celá obrazovka. Zdroj: <a href="https://github.com/jindrichskupa/kiv-ups">github.com/jindrichskupa/kiv-ups</a></p>
 <ul>
 $items</ul>
 </main>
