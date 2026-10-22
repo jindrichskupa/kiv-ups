@@ -9,14 +9,14 @@
 | 2 - C server čte Javu | 8 | jádro |
 | 3 - text a konce řádků | 10 | jádro |
 | 4 - Python `struct` | 10 | jádro |
-| 5 - C# `BinaryWriter` | 8 | jádro |
+| 5 - Go a `binary.LittleEndian` | 8 | jádro |
 | 6 - jedna zpráva, tři jazyky | 15 | jádro |
 | 7 - co se skrývá pod obalem | 10 | jádro |
 | shrnutí | 5 | |
 | 8 - UTF-8 | 5 | bonus |
 | 9 - `ObjectOutputStream` | 5 | bonus |
 | 10 - konec spojení | 7 | bonus |
-| 11 - vlákna a virtuální vlákna | 7 | bonus |
+| 11 - vlákna, virtuální vlákna, gorutiny | 7 | bonus |
 | 12 - řetězení proudů | 5 | bonus |
 | 13 - UDP v Javě | 7 | bonus |
 
@@ -25,9 +25,9 @@ Tahák:
 ```
 síťové pořadí = big-endian (nejvyšší bajt první)
 Java DataOutputStream:  big-endian; writeUTF = 2 B délka (v bajtech) + modified UTF-8
-C# BinaryWriter:        little-endian; Write(string) = 7bitová délka + UTF-8
+Go encoding/binary:     pořadí volíte sami (binary.BigEndian!); jen pevné typy int32, uint16 …
 Python struct:          '!' = síť, '<' = little, bez prefixu = nativní pořadí + zarovnání
-konec spojení:  C recv 0 | Java read -1, readLine null, readInt EOFException | Python b'' | C# Read 0
+konec spojení:  C recv 0 | Java read -1, readLine null, readInt EOFException | Python b'' | Go Read 0, io.EOF
 ```
 
 ---
@@ -127,14 +127,16 @@ def recv_all(s, n):
 
 ---
 
-## Příklad 5 - C# `BinaryWriter`
+## Příklad 5 - Go a `binary.LittleEndian`
 
 **a)**
 
 ```
-Write(258)          02 01 00 00          int32 little-endian
-Write((short)-2)    FE FF                int16 little-endian
-Write("Ahoj")       04 41 68 6F 6A       délka jako 7bitové číslo (4 < 128 → 1 B) + UTF-8
+int32(258)        02 01 00 00          little-endian (nejnižší bajt první)
+int16(-2)         FE FF                little-endian
+uint16(4)         04 00                délka "Ahoj", little-endian
+"Ahoj"            41 68 6F 6A
+                                       celkem 4 + 2 + 2 + 4 = 12 B
 ```
 
 **b)** Java čte big-endian:
@@ -142,19 +144,18 @@ Write("Ahoj")       04 41 68 6F 6A       délka jako 7bitové číslo (4 < 128 �
 ```
 readInt   02 01 00 00 → 0x02010000 = 33 619 968
 readShort FE FF       → 0xFEFF     = −257
-readUTF   04 41       → délka 0x0441 = 1089 B → čeká na dalších 1089 bajtů (máme jen 4: 68 6F 6A + nic)
+readUTF   04 00       → délka 0x0400 = 1024 B → čeká na dalších 1024 bajtů (přišly jen 4)
 ```
 
 **c)**
 
-```csharp
-w.Write(IPAddress.HostToNetworkOrder(258));            // System.Net, int/short/long
-// nebo
-Span<byte> b = stackalloc byte[4];
-BinaryPrimitives.WriteInt32BigEndian(b, 258);          // System.Buffers.Binary
-stream.Write(b);
+```go
+binary.Write(&b, binary.BigEndian, int32(258))      // 00 00 01 02
+// nebo bez bufferu:
+msg := binary.BigEndian.AppendUint32(nil, 258)
 ```
 
+`binary.Write(&b, binary.BigEndian, 258)` vrátí chybu `binary.Write: some values are not fixed-sized in type int` a nezapíše nic - `int` má v Go velikost podle platformy (32/64 b). Vždy pevné typy `int32`, `uint16` …
 ---
 
 ## Příklad 6 - jedna zpráva, tři jazyky
@@ -187,14 +188,12 @@ jm = 'pepa'.encode('ascii')
 s.sendall(struct.pack('!2sBH', b'UP', 1, len(jm)) + jm)
 ```
 
-```csharp
-var w = new BinaryWriter(client.GetStream());
-byte[] jm = Encoding.ASCII.GetBytes("pepa");
-w.Write(Encoding.ASCII.GetBytes("UP"));                     // Write(byte[]) = surové bajty bez délky
-w.Write((byte)1);
-w.Write(IPAddress.HostToNetworkOrder((short)jm.Length));
-w.Write(jm);
-w.Flush();
+```go
+jm := "pepa"
+msg := append([]byte("UP"), 1)                              // magic + kód
+msg = binary.BigEndian.AppendUint16(msg, uint16(len(jm)))   // délka v bajtech, big-endian
+msg = append(msg, jm...)
+if _, err := conn.Write(msg); err != nil { … }              // Write na net.Conn zapíše vše, nebo vrátí chybu
 ```
 
 Ověření bez serveru: `nc -l 4242 | xxd` a spustit klienta.
@@ -205,10 +204,10 @@ Ověření bez serveru: `nc -l 4242 | xxd` a spustit klienta.
 
 | obal | BSD volání |
 |------|------------|
-| `new ServerSocket(4242)` / `socket()+bind()+listen()` / `TcpListener.Start()` | `socket`, `bind`, `listen` (Java v Linuxu nastaví i `SO_REUSEADDR`) |
-| `accept()` / `AcceptTcpClient()` | `accept` → nový socket pro klienta |
-| `new Socket("zcu.cz", 4242)` / `connect(('zcu.cz', 4242))` / `new TcpClient(…)` | `getaddrinfo` (překlad jména) + `socket` + `connect` |
-| `in.read(buf)` / `recv(1024)` / `stream.Read(…)` | `recv` (vrací 1 až n bajtů) |
+| `new ServerSocket(4242)` / `socket()+bind()+listen()` / `net.Listen("tcp", ":4242")` | `socket`, `bind`, `listen` (Java v Linuxu nastaví i `SO_REUSEADDR`) |
+| `accept()` / `ln.Accept()` | `accept` → nový socket pro klienta |
+| `new Socket("zcu.cz", 4242)` / `connect(('zcu.cz', 4242))` / `net.Dial("tcp", "zcu.cz:4242")` | `getaddrinfo` (překlad jména) + `socket` + `connect` |
+| `in.read(buf)` / `recv(1024)` / `conn.Read(buf)` | `recv` (vrací 1 až n bajtů) |
 | `close()` / `Close()` | `close` (Windows `closesocket`) |
 
 ---
@@ -229,6 +228,8 @@ strlen = 13, len(str) = 9, len(str.encode()) = 13
 - **a)** `AC ED` (STREAM_MAGIC) `00 05` (STREAM_VERSION).
 - **b)** Následuje `TC_OBJECT`, popis třídy (`TC_CLASSDESC`, plné jméno třídy, `serialVersionUID`, příznaky, počet a typy položek) a až pak hodnoty `3` a `4`. Implementovat to v C je zbytečně složité a křehké. Mezi dvěma Java programy musí být třída `Tah` stejná (jinak `InvalidClassException`) a deserializace z nedůvěryhodného zdroje umožňuje útoky.
 
+Go má obdobu `encoding/gob`: `gob.NewEncoder(conn).Encode(Tah{3, 4})` pošle 37 B, z toho většina je popis typu (`Tah`, `X`, `Y`); s C se nedomluví stejně jako `ObjectOutputStream`.
+
 ---
 
 ## Příklad 10 - konec spojení (bonus)
@@ -239,7 +240,9 @@ strlen = 13, len(str) = 9, len(str.encode()) = 13
 | Java | `DataInputStream.readInt()` | `EOFException` |
 | Java | `BufferedReader.readLine()` | `null` |
 | Python | `socket.recv(n)` | `b''` |
-| C# | `NetworkStream.Read(…)`, `Socket.Receive(…)` | `0` |
+| Go | `conn.Read(buf)` | `0, io.EOF` |
+| Go | `io.ReadFull(conn, buf)` | `io.EOF` (nic), `io.ErrUnexpectedEOF` (jen část) |
+| Go | `bufio.Reader.ReadString('\n')` | dosud přijatá data + `io.EOF` |
 
 **d)** `recv` po zavření vrací okamžitě `b''` pořád dokola → smyčka tiskne `b''` a spotřebuje 100 % CPU. Oprava:
 
@@ -254,14 +257,15 @@ conn.close()
 
 ---
 
-## Příklad 11 - vlákna a virtuální vlákna (bonus)
+## Příklad 11 - vlákna, virtuální vlákna, gorutiny (bonus)
 
 ```
 a) 10 000 · 1 MB = 10 000 MB ≈ 9,8 GiB rezervované virtuální paměti
 ```
 
 - **b)** Virtuální vlákno je objekt v JVM; jeho zásobník je na haldě a roste podle potřeby (u čekajícího vlákna řádově jednotky kB). Blokující `read` virtuální vlákno "zaparkuje" a nosné vlákno OS obslouží jiné → 10 000 klientů řádově desítky MB.
-- **c)** Ne: CPython při blokujícím I/O (`recv`, `accept`) GIL uvolní, ostatní vlákna běží. Problém by byl výpočet v Pythonu (např. AI soupeř) - pak `multiprocessing`.
+- **c)** Gorutina startuje se zásobníkem 2 KiB, který runtime podle potřeby zvětší. Blokující `conn.Read` gorutinu zaparkuje (Go uvnitř používá neblokující sockety a `epoll`) a vlákno OS běží dál s jinou gorutinou. Změřeno: 10 000 čekajících gorutin ≈ 20 MiB zásobníků (`runtime.MemStats.StackInuse`).
+- **d)** Ne: CPython při blokujícím I/O (`recv`, `accept`) GIL uvolní, ostatní vlákna běží. Problém by byl výpočet v Pythonu (např. AI soupeř) - pak `multiprocessing`.
 
 ---
 

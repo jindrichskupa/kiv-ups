@@ -6,7 +6,7 @@ Slidy a materiály ke cvičením z předmětu KIV/UPS.
 
 1. [Úvod, základy síťové diagnostiky a konfigurace v GNU/Linux a MS Windows (IPv4 i IPv6)](https://github.com/jindrichskupa/kiv-ups/blob/master/ex01/slides/ex01.md)
 2. [Síťové programování I.: BSD sockety v C](https://github.com/jindrichskupa/kiv-ups/blob/master/ex02/slides/ex02.md)
-3. [Síťové programování II.: sockety v Javě, Pythonu a C#](https://github.com/jindrichskupa/kiv-ups/blob/master/ex03/slides/ex03.md)
+3. [Síťové programování II.: sockety v Javě, Pythonu a Go](https://github.com/jindrichskupa/kiv-ups/blob/master/ex03/slides/ex03.md)
 4. [Návrh aplikačního protokolu: serializace, TLV, escapování, stavový diagram](https://github.com/jindrichskupa/kiv-ups/blob/master/ex04/slides/ex04.md)
 5. [Fyzická vrstva, Nyquist, Shannon, decibely, synchronní a arytmický přenos, UART](https://github.com/jindrichskupa/kiv-ups/blob/master/ex05/slides/ex05.md)
 6. [Linkové kódy, 4B/5B, MLT-3, modulace (ASK, FSK, PSK, QAM), multiplex (FDM, WDM, TDM)](https://github.com/jindrichskupa/kiv-ups/blob/master/ex06/slides/ex06.md)
